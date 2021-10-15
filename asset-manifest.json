@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "./static/js/main.e4a05007.js",
+    "main.js": "./static/js/main.53353a1f.js",
     "senhub.js": "./index.js",
     "static/css/src_bootstrap_tsx.4f307795.chunk.css": "./static/css/src_bootstrap_tsx.4f307795.chunk.css",
-    "static/js/src_bootstrap_tsx.70d66074.chunk.js": "./static/js/src_bootstrap_tsx.70d66074.chunk.js",
+    "static/js/src_bootstrap_tsx.eb231e3e.chunk.js": "./static/js/src_bootstrap_tsx.eb231e3e.chunk.js",
     "static/js/node_modules_babel_runtime_helpers_esm_objectSpread2_js.c8967490.chunk.js": "./static/js/node_modules_babel_runtime_helpers_esm_objectSpread2_js.c8967490.chunk.js",
     "static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js.3bb0e33e.chunk.js": "./static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js.3bb0e33e.chunk.js",
     "static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js-node_modules_babel_run-71052f.b1abc129.chunk.js": "./static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js-node_modules_babel_run-71052f.b1abc129.chunk.js",
     "static/js/node_modules_react_index_js.037173f7.chunk.js": "./static/js/node_modules_react_index_js.037173f7.chunk.js",
-    "static/js/src_store_index_ts.561eb153.chunk.js": "./static/js/src_store_index_ts.561eb153.chunk.js",
-    "static/js/src_helpers_providers_index_tsx.c9b60506.chunk.js": "./static/js/src_helpers_providers_index_tsx.c9b60506.chunk.js",
+    "static/js/src_store_index_ts.34bf423d.chunk.js": "./static/js/src_store_index_ts.34bf423d.chunk.js",
+    "static/js/src_helpers_providers_index_tsx.39bec913.chunk.js": "./static/js/src_helpers_providers_index_tsx.39bec913.chunk.js",
     "static/js/vendors-node_modules_react-dom_index_js.cc852fdc.chunk.js": "./static/js/vendors-node_modules_react-dom_index_js.cc852fdc.chunk.js",
     "static/js/vendors-node_modules_react-router-dom_esm_react-router-dom_js.0f4f0179.chunk.js": "./static/js/vendors-node_modules_react-router-dom_esm_react-router-dom_js.0f4f0179.chunk.js",
     "static/js/node_modules_web-vitals_dist_web-vitals_js.3718fa25.chunk.js": "./static/js/node_modules_web-vitals_dist_web-vitals_js.3718fa25.chunk.js",
@@ -22,16 +22,16 @@
     "static/css/vendors-node_modules_antd_dist_antd_variable_min_css.d878b107.chunk.css": "./static/css/vendors-node_modules_antd_dist_antd_variable_min_css.d878b107.chunk.css",
     "static/media/sen.svg": "./static/media/sen.f2d012c907167ba613b035621b6423cb.svg",
     "index.html": "./index.html",
-    "main.e4a05007.js.map": "./static/js/main.e4a05007.js.map",
+    "main.53353a1f.js.map": "./static/js/main.53353a1f.js.map",
     "index.js.map": "./index.js.map",
     "src_bootstrap_tsx.4f307795.chunk.css.map": "./static/css/src_bootstrap_tsx.4f307795.chunk.css.map",
-    "src_bootstrap_tsx.70d66074.chunk.js.map": "./static/js/src_bootstrap_tsx.70d66074.chunk.js.map",
+    "src_bootstrap_tsx.eb231e3e.chunk.js.map": "./static/js/src_bootstrap_tsx.eb231e3e.chunk.js.map",
     "node_modules_babel_runtime_helpers_esm_objectSpread2_js.c8967490.chunk.js.map": "./static/js/node_modules_babel_runtime_helpers_esm_objectSpread2_js.c8967490.chunk.js.map",
     "node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js.3bb0e33e.chunk.js.map": "./static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js.3bb0e33e.chunk.js.map",
     "node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js-node_modules_babel_run-71052f.b1abc129.chunk.js.map": "./static/js/node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js-node_modules_babel_run-71052f.b1abc129.chunk.js.map",
     "node_modules_react_index_js.037173f7.chunk.js.map": "./static/js/node_modules_react_index_js.037173f7.chunk.js.map",
-    "src_store_index_ts.561eb153.chunk.js.map": "./static/js/src_store_index_ts.561eb153.chunk.js.map",
-    "src_helpers_providers_index_tsx.c9b60506.chunk.js.map": "./static/js/src_helpers_providers_index_tsx.c9b60506.chunk.js.map",
+    "src_store_index_ts.34bf423d.chunk.js.map": "./static/js/src_store_index_ts.34bf423d.chunk.js.map",
+    "src_helpers_providers_index_tsx.39bec913.chunk.js.map": "./static/js/src_helpers_providers_index_tsx.39bec913.chunk.js.map",
     "vendors-node_modules_react-dom_index_js.cc852fdc.chunk.js.map": "./static/js/vendors-node_modules_react-dom_index_js.cc852fdc.chunk.js.map",
     "vendors-node_modules_react-router-dom_esm_react-router-dom_js.0f4f0179.chunk.js.map": "./static/js/vendors-node_modules_react-router-dom_esm_react-router-dom_js.0f4f0179.chunk.js.map",
     "node_modules_web-vitals_dist_web-vitals_js.3718fa25.chunk.js.map": "./static/js/node_modules_web-vitals_dist_web-vitals_js.3718fa25.chunk.js.map",
@@ -44,6 +44,6 @@
     "vendors-node_modules_antd_dist_antd_variable_min_css.d878b107.chunk.css.map": "./static/css/vendors-node_modules_antd_dist_antd_variable_min_css.d878b107.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/main.e4a05007.js"
+    "static/js/main.53353a1f.js"
   ]
 }
