@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksenhub=self.webpackChunksenhub||[]).push([[423],{48423:function(n,e,t){t.r(e),t.d(e,{logo:function(){return u},email:function(){return i}});var u=t(17100),i="hi@sentre.io"},17100:function(n,e,t){n.exports=t.p+"static/media/logo.da175f6d5d1564b6bc58.png"}}]);
-//# sourceMappingURL=423.e4bc87cd.chunk.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/423.4d631c1a.chunk.js","mappings":"iJACO,IAAMA,EAAQ","sources":["app/static.app.tsx"],"sourcesContent":["// export { default as logo } from 'app/static/images/logo.png'\nexport const email = 'hi@sentre.io'\n"],"names":["email"],"sourceRoot":""}
