@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.66b86771.js",
+    "main.js": "/static/js/main.33162aec.js",
     "senhub.js": "/index.js",
-    "static/css/659.764ad079.chunk.css": "/static/css/659.764ad079.chunk.css",
-    "static/js/659.a9276926.chunk.js": "/static/js/659.a9276926.chunk.js",
+    "static/css/614.74c8e377.chunk.css": "/static/css/614.74c8e377.chunk.css",
+    "static/js/614.1c7d620e.chunk.js": "/static/js/614.1c7d620e.chunk.js",
     "static/js/413.80a1a369.chunk.js": "/static/js/413.80a1a369.chunk.js",
     "static/js/366.93a48de3.chunk.js": "/static/js/366.93a48de3.chunk.js",
     "static/js/94.645303be.chunk.js": "/static/js/94.645303be.chunk.js",
@@ -31,12 +31,13 @@
     "static/media/coin98.png": "/static/media/coin98.d4a8d3199bc374898921.png",
     "static/media/sen-lite.png": "/static/media/sen-lite.210754c276178acec395.png",
     "index.html": "/index.html",
+    "static/media/error-image.svg": "/static/media/error-image.2a4549c596199c25fa7af4dbefe26b3a.svg",
     "static/media/slope.svg": "/static/media/slope.de08dadb3988dd770e2d0d58acf15a09.svg",
     "static/media/README.md": "/static/media/README.8031d87b69201862230c.md",
-    "main.66b86771.js.map": "/static/js/main.66b86771.js.map",
+    "main.33162aec.js.map": "/static/js/main.33162aec.js.map",
     "index.js.map": "/index.js.map",
-    "659.764ad079.chunk.css.map": "/static/css/659.764ad079.chunk.css.map",
-    "659.a9276926.chunk.js.map": "/static/js/659.a9276926.chunk.js.map",
+    "614.74c8e377.chunk.css.map": "/static/css/614.74c8e377.chunk.css.map",
+    "614.1c7d620e.chunk.js.map": "/static/js/614.1c7d620e.chunk.js.map",
     "413.80a1a369.chunk.js.map": "/static/js/413.80a1a369.chunk.js.map",
     "366.93a48de3.chunk.js.map": "/static/js/366.93a48de3.chunk.js.map",
     "94.645303be.chunk.js.map": "/static/js/94.645303be.chunk.js.map",
@@ -57,6 +58,6 @@
     "881.ddb07775.chunk.js.map": "/static/js/881.ddb07775.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.66b86771.js"
+    "static/js/main.33162aec.js"
   ]
 }
