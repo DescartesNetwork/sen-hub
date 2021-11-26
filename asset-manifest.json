@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.ed49d873.js",
+    "main.js": "/static/js/main.123f6599.js",
     "senhub.js": "/index.js",
     "static/css/549.a2d08705.chunk.css": "/static/css/549.a2d08705.chunk.css",
-    "static/js/549.121529db.chunk.js": "/static/js/549.121529db.chunk.js",
+    "static/js/549.7186a104.chunk.js": "/static/js/549.7186a104.chunk.js",
     "static/js/413.80a1a369.chunk.js": "/static/js/413.80a1a369.chunk.js",
     "static/js/366.93a48de3.chunk.js": "/static/js/366.93a48de3.chunk.js",
     "static/js/878.04d592ec.chunk.js": "/static/js/878.04d592ec.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/495.fce41349.chunk.js": "/static/js/495.fce41349.chunk.js",
     "static/js/839.859acce8.chunk.js": "/static/js/839.859acce8.chunk.js",
     "static/js/423.98f698b6.chunk.js": "/static/js/423.98f698b6.chunk.js",
-    "static/js/449.e736040b.chunk.js": "/static/js/449.e736040b.chunk.js",
+    "static/js/449.9dcf7ef1.chunk.js": "/static/js/449.9dcf7ef1.chunk.js",
     "static/js/108.59677b3d.chunk.js": "/static/js/108.59677b3d.chunk.js",
     "static/js/402.56214b79.chunk.js": "/static/js/402.56214b79.chunk.js",
     "static/js/361.5a89afd8.chunk.js": "/static/js/361.5a89afd8.chunk.js",
@@ -19,7 +19,7 @@
     "static/js/140.0bcb8639.chunk.js": "/static/js/140.0bcb8639.chunk.js",
     "static/js/226.835aeeea.chunk.js": "/static/js/226.835aeeea.chunk.js",
     "static/js/883.8d377d91.chunk.js": "/static/js/883.8d377d91.chunk.js",
-    "static/js/308.85b160f8.chunk.js": "/static/js/308.85b160f8.chunk.js",
+    "static/js/308.20a6bd6e.chunk.js": "/static/js/308.20a6bd6e.chunk.js",
     "static/js/478.5bce3471.chunk.js": "/static/js/478.5bce3471.chunk.js",
     "static/js/128.b942d4de.chunk.js": "/static/js/128.b942d4de.chunk.js",
     "static/js/99.d0702e61.chunk.js": "/static/js/99.d0702e61.chunk.js",
@@ -41,10 +41,10 @@
     "static/media/slope.svg": "/static/media/slope.de08dadb3988dd770e2d0d58acf15a09.svg",
     "static/media/icon-telegram.svg": "/static/media/icon-telegram.2450489f40d03000fe65fc1c6f238d85.svg",
     "static/media/README.md": "/static/media/README.ff93448fef94ea73029b.md",
-    "main.ed49d873.js.map": "/static/js/main.ed49d873.js.map",
+    "main.123f6599.js.map": "/static/js/main.123f6599.js.map",
     "index.js.map": "/index.js.map",
     "549.a2d08705.chunk.css.map": "/static/css/549.a2d08705.chunk.css.map",
-    "549.121529db.chunk.js.map": "/static/js/549.121529db.chunk.js.map",
+    "549.7186a104.chunk.js.map": "/static/js/549.7186a104.chunk.js.map",
     "413.80a1a369.chunk.js.map": "/static/js/413.80a1a369.chunk.js.map",
     "366.93a48de3.chunk.js.map": "/static/js/366.93a48de3.chunk.js.map",
     "878.04d592ec.chunk.js.map": "/static/js/878.04d592ec.chunk.js.map",
@@ -52,7 +52,7 @@
     "495.fce41349.chunk.js.map": "/static/js/495.fce41349.chunk.js.map",
     "839.859acce8.chunk.js.map": "/static/js/839.859acce8.chunk.js.map",
     "423.98f698b6.chunk.js.map": "/static/js/423.98f698b6.chunk.js.map",
-    "449.e736040b.chunk.js.map": "/static/js/449.e736040b.chunk.js.map",
+    "449.9dcf7ef1.chunk.js.map": "/static/js/449.9dcf7ef1.chunk.js.map",
     "108.59677b3d.chunk.js.map": "/static/js/108.59677b3d.chunk.js.map",
     "402.56214b79.chunk.js.map": "/static/js/402.56214b79.chunk.js.map",
     "361.5a89afd8.chunk.js.map": "/static/js/361.5a89afd8.chunk.js.map",
@@ -60,7 +60,7 @@
     "140.0bcb8639.chunk.js.map": "/static/js/140.0bcb8639.chunk.js.map",
     "226.835aeeea.chunk.js.map": "/static/js/226.835aeeea.chunk.js.map",
     "883.8d377d91.chunk.js.map": "/static/js/883.8d377d91.chunk.js.map",
-    "308.85b160f8.chunk.js.map": "/static/js/308.85b160f8.chunk.js.map",
+    "308.20a6bd6e.chunk.js.map": "/static/js/308.20a6bd6e.chunk.js.map",
     "478.5bce3471.chunk.js.map": "/static/js/478.5bce3471.chunk.js.map",
     "128.b942d4de.chunk.js.map": "/static/js/128.b942d4de.chunk.js.map",
     "99.d0702e61.chunk.js.map": "/static/js/99.d0702e61.chunk.js.map",
@@ -69,6 +69,6 @@
     "860.282a4983.chunk.js.map": "/static/js/860.282a4983.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed49d873.js"
+    "static/js/main.123f6599.js"
   ]
 }
