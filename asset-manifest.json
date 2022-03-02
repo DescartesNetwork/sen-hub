@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.fd886996.js",
+    "main.js": "/static/js/main.b8209438.js",
     "senhub.js": "/index.js",
     "static/css/416.d9a5fbe3.chunk.css": "/static/css/416.d9a5fbe3.chunk.css",
-    "static/js/416.b5a0a3fb.chunk.js": "/static/js/416.b5a0a3fb.chunk.js",
+    "static/js/416.5e9dfdb1.chunk.js": "/static/js/416.5e9dfdb1.chunk.js",
     "static/js/361.35d96851.chunk.js": "/static/js/361.35d96851.chunk.js",
     "static/js/320.1905493b.chunk.js": "/static/js/320.1905493b.chunk.js",
     "static/js/56.575f469c.chunk.js": "/static/js/56.575f469c.chunk.js",
@@ -28,12 +28,13 @@
     "static/js/98.7231cf42.chunk.js": "/static/js/98.7231cf42.chunk.js",
     "static/js/461.53a3ea7f.chunk.js": "/static/js/461.53a3ea7f.chunk.js",
     "static/media/dark-bg-welcome.png": "/static/media/dark-bg-welcome.cfbd7a4df10674ca1e2b.png",
-    "static/media/store-panel5.png": "/static/media/store-panel5.54725b0990f71ce0156d.png",
-    "static/media/store-panel4.png": "/static/media/store-panel4.1a4e491132a246b78a71.png",
+    "static/media/store-bpanel2.png": "/static/media/store-bpanel2.54725b0990f71ce0156d.png",
+    "static/media/store-panel4.png": "/static/media/store-panel4.335831eac5919b35dbc7.png",
+    "static/media/store-bpanel1.png": "/static/media/store-bpanel1.1a4e491132a246b78a71.png",
     "static/media/store-panel1.png": "/static/media/store-panel1.db86d98b29b7583f9997.png",
     "static/media/light-bg-welcome.png": "/static/media/light-bg-welcome.59d39f87387a25224ddb.png",
-    "static/media/store-panel2.png": "/static/media/store-panel2.d591a5edaa65c41fefaf.png",
-    "static/media/store-panel3.png": "/static/media/store-panel3.1e672d2595826300ae5a.png",
+    "static/media/store-panel2.png": "/static/media/store-panel2.d36bfb8c414ec1359241.png",
+    "static/media/store-panel3.png": "/static/media/store-panel3.e0513d6acea6f1a203be.png",
     "static/media/dark-bg.png": "/static/media/dark-bg.e0ce57639fdc13a3bdb0.png",
     "static/media/phantom.png": "/static/media/phantom.1078280bdfb21865925d.png",
     "static/media/light-bg.png": "/static/media/light-bg.d50c31e1df3f18fcc841.png",
@@ -63,10 +64,10 @@
     "static/media/icon-telegram.svg": "/static/media/icon-telegram.2450489f40d03000fe65fc1c6f238d85.svg",
     "static/media/slope.svg": "/static/media/slope.de08dadb3988dd770e2d0d58acf15a09.svg",
     "static/media/README.md": "/static/media/README.ff93448fef94ea73029b.md",
-    "main.fd886996.js.map": "/static/js/main.fd886996.js.map",
+    "main.b8209438.js.map": "/static/js/main.b8209438.js.map",
     "index.js.map": "/index.js.map",
     "416.d9a5fbe3.chunk.css.map": "/static/css/416.d9a5fbe3.chunk.css.map",
-    "416.b5a0a3fb.chunk.js.map": "/static/js/416.b5a0a3fb.chunk.js.map",
+    "416.5e9dfdb1.chunk.js.map": "/static/js/416.5e9dfdb1.chunk.js.map",
     "361.35d96851.chunk.js.map": "/static/js/361.35d96851.chunk.js.map",
     "320.1905493b.chunk.js.map": "/static/js/320.1905493b.chunk.js.map",
     "56.575f469c.chunk.js.map": "/static/js/56.575f469c.chunk.js.map",
@@ -92,6 +93,6 @@
     "461.53a3ea7f.chunk.js.map": "/static/js/461.53a3ea7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fd886996.js"
+    "static/js/main.b8209438.js"
   ]
 }
