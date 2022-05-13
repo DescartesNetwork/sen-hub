@@ -22,7 +22,7 @@ import {
   useRootDispatch,
   RootDispatch,
 } from 'os/store'
-import { loadPage, loadRegister } from 'os/store/page.reducer'
+import { loadPage } from 'os/store/page.reducer'
 import { loadVisited, updateLoading } from 'os/store/flags.reducer'
 
 import 'os/static/styles/dark.os.less'
@@ -40,12 +40,11 @@ const View = () => {
   // Load DApp flags, registry, page
   useEffect(() => {
     ;(async () => {
-      if (!account.isAddress(walletAddress)) return dispatch(loadRegister())
+      if (!account.isAddress(walletAddress)) return
       try {
         await dispatch(updateLoading(true))
         await dispatch(loadVisited())
-        const register = await dispatch(loadRegister()).unwrap()
-        if (Object.keys(register).length) await dispatch(loadPage())
+        await dispatch(loadPage())
       } catch (er: any) {
         return window.notify({ type: 'warning', description: er.message })
       } finally {

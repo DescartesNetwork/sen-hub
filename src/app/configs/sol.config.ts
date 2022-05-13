@@ -1,5 +1,3 @@
-import { Net } from 'shared/runtime'
-
 /**
  * Contructor
  */

@@ -6,7 +6,7 @@ import configs from 'os/configs'
 import { env } from 'shared/runtime'
 
 const {
-  register: { senreg, extra, devAppId },
+  register: { extra, devAppId },
 } = configs
 
 /**
@@ -24,14 +24,6 @@ const troubleshoot = (register: SenReg, appIds?: AppIds): AppIds => {
     appIds.unshift(devAppId)
   return appIds.filter((appId) => register[appId])
 }
-const fetchRegister = async () => {
-  try {
-    const res = await fetch(senreg)
-    return await res.json()
-  } catch (er) {
-    return {}
-  }
-}
 
 /**
  * Store constructor
@@ -39,22 +31,13 @@ const fetchRegister = async () => {
 
 const NAME = 'page'
 const initialState: PageState = {
-  register: {},
+  register: { ...extra, ...window._sentre.register },
   appIds: [],
 }
 
 /**
  * Actions
  */
-
-// Must fetch register at very first of the process
-export const loadRegister = createAsyncThunk(
-  `${NAME}/loadRegister`,
-  async () => {
-    const register = await fetchRegister()
-    return { register: { ...register, ...extra } }
-  },
-)
 
 // For sandbox only
 export const installManifest = createAsyncThunk<
@@ -167,10 +150,6 @@ const slice = createSlice({
   reducers: {},
   extraReducers: (builder) =>
     void builder
-      .addCase(
-        loadRegister.fulfilled,
-        (state, { payload }) => void Object.assign(state, payload),
-      )
       .addCase(
         installManifest.fulfilled,
         (state, { payload }) => void Object.assign(state, payload),

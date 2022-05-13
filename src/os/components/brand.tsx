@@ -1,7 +1,5 @@
 import { CSSProperties } from 'react'
 
-import { Net } from 'shared/runtime'
-
 import mainnet_horizontal_light from 'os/static/images/brand/mainnet-horizontal-light-sen.svg'
 import mainnet_horizontal_dark from 'os/static/images/brand/mainnet-horizontal-dark-sen.svg'
 import mainnet_vertical_light from 'os/static/images/brand/mainnet-vertical-light-sen.svg'

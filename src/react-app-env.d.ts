@@ -8,6 +8,10 @@ type SentreNotification = {
   description: string
   onClick?: () => void
 }
+
+type Env = 'development' | 'staging' | 'production'
+type Net = 'devnet' | 'testnet' | 'mainnet'
+type ChainId = 101 | 102 | 103
 interface Window {
   // Sentre
   sentre: {
@@ -15,6 +19,13 @@ interface Window {
     lamports: import('@senswap/sen-js').Lamports
     splt: import('@senswap/sen-js').SPLT
     swap: import('@senswap/sen-js').Swap
+  }
+  _sentre: {
+    cluster: string
+    env: Env
+    net: Net
+    chainId: ChainId
+    register: SenReg
   }
   // IPFS
   ipfs?: ReturnType<import('ipfs-core').create>

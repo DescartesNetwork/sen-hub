@@ -1,5 +1,3 @@
-import { Env } from 'shared/runtime'
-
 if (
   typeof process.env.REACT_APP_ID !== 'string' ||
   typeof process.env.REACT_APP_NAME !== 'string' ||

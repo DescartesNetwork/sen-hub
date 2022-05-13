@@ -5,7 +5,7 @@ import IonIcon from 'shared/antd/ionicon'
 import NetSwitch from './netSwitch'
 
 import configs from 'os/configs'
-import { pingCluster } from 'shared/runtime'
+import { pingCluster } from 'osLoader'
 
 const {
   sol: { node },

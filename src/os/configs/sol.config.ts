@@ -1,4 +1,4 @@
-import { Net, rpc } from 'shared/runtime'
+import { rpc } from 'shared/runtime'
 
 const SOLVARS = {
   spltAddress: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
