@@ -7,7 +7,7 @@ import View from 'os/view'
 
 import store from 'os/store'
 
-const OS = () => {
+const OsApp = () => {
   return (
     <Provider context={RootContext} store={store}>
       <BrowserRouter>
@@ -19,4 +19,4 @@ const OS = () => {
   )
 }
 
-export default OS
+export default OsApp

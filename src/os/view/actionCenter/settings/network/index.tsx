@@ -5,7 +5,6 @@ import IonIcon from 'shared/antd/ionicon'
 import NetSwitch from './netSwitch'
 
 import configs from 'os/configs'
-import { pingCluster } from 'osLoader'
 
 const {
   sol: { node },
@@ -56,7 +55,7 @@ const Network = () => {
     try {
       if (!window.navigator.onLine)
         return setNetworkStatus(NetworkStatus.Failed)
-      const duration = await pingCluster(node)
+      const duration = await window._sentre.pingCluster(node)
       if (duration < 250) return setNetworkStatus(NetworkStatus.Good)
       if (duration < 1000) return setNetworkStatus(NetworkStatus.Moderate)
       return setNetworkStatus(NetworkStatus.Poor)

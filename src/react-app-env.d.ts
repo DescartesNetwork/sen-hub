@@ -26,6 +26,8 @@ interface Window {
     net: Net
     chainId: ChainId
     register: SenReg
+    onSwitchNetwork: (value: Net) => void
+    pingCluster: (nodeRpc: string) => Promise<number>
   }
   // IPFS
   ipfs?: ReturnType<import('ipfs-core').create>

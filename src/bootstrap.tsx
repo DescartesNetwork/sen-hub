@@ -1,5 +1,5 @@
 import { render } from 'react-dom'
-import React, { Suspense, useCallback, useEffect, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import reportWebVitals from 'reportWebVitals'
 
 import {
@@ -8,19 +8,22 @@ import {
   getCluster,
   getEnv,
   getNetwork,
+  onSwitchNetwork,
+  pingCluster,
 } from './osLoader'
 
 const OsLoading = () => {
-  return <div>Loading</div>
+  return <div>Loading...</div>
 }
-
 const OsLoader = () => {
   const [loading, setLoading] = useState(true)
 
   const loadOsData = useCallback(async () => {
     // Load OS data
-    const cluster = await getCluster()
-    const register = await fetchRegister()
+    const [cluster, register] = await Promise.all([
+      getCluster(),
+      fetchRegister(),
+    ])
     // Block _sentre private data
     window._sentre = Object.freeze({
       cluster,
@@ -28,6 +31,8 @@ const OsLoader = () => {
       net: getNetwork(),
       chainId: getChainId(),
       register,
+      onSwitchNetwork: onSwitchNetwork,
+      pingCluster: pingCluster,
     })
     Object.defineProperty(window, '_sentre', {
       value: window._sentre,
@@ -43,7 +48,7 @@ const OsLoader = () => {
 
   if (loading) return <OsLoading />
 
-  const OsApp = React.lazy(() => import('./osApp'))
+  const OsApp = lazy(() => import('./osApp'))
   return (
     <Suspense fallback={<OsLoading />}>
       <OsApp />

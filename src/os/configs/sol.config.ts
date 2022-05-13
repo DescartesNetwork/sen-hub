@@ -1,4 +1,4 @@
-import { rpc } from 'shared/runtime'
+const { cluster } = window._sentre
 
 const SOLVARS = {
   spltAddress: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
@@ -20,7 +20,7 @@ const conf: Record<Net, Conf> = {
    */
   devnet: {
     ...SOLVARS,
-    node: rpc,
+    node: cluster,
     swapAddress: '4erFSLP7oBFSVC1t35jdxmbfxEhYCKfoM6XdG2BLR3UF',
     taxmanAddress: '8UaZw2jDhJzv5V53569JbCd3bD4BnyCfBH3sjwgajGS9',
   },
@@ -30,7 +30,7 @@ const conf: Record<Net, Conf> = {
    */
   testnet: {
     ...SOLVARS,
-    node: rpc,
+    node: cluster,
     swapAddress: '4erFSLP7oBFSVC1t35jdxmbfxEhYCKfoM6XdG2BLR3UF',
     taxmanAddress: '8UaZw2jDhJzv5V53569JbCd3bD4BnyCfBH3sjwgajGS9',
   },
@@ -40,7 +40,7 @@ const conf: Record<Net, Conf> = {
    */
   mainnet: {
     ...SOLVARS,
-    node: rpc,
+    node: cluster,
     swapAddress: 'SSW7ooZ1EbEognq5GosbygA3uWW1Hq1NsFq6TsftCFV',
     taxmanAddress: '9doo2HZQEmh2NgfT3Yx12M89aoBheycYqH1eaR5gKb3e',
   },

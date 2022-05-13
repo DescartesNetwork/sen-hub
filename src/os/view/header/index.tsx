@@ -16,8 +16,9 @@ import {
   RootState,
 } from 'os/store'
 import { setWalkthrough, WalkThroughType } from 'os/store/walkthrough.reducer'
-import { net } from 'shared/runtime'
 import { setVisible } from 'os/store/search.reducer'
+
+const { net } = window._sentre
 
 export type NavButtonProps = {
   id: string

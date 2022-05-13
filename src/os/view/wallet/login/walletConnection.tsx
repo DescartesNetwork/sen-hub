@@ -12,8 +12,9 @@ import KeyStore from './keystore'
 import SecretKey from './secretKey'
 import CloverWallet from './clover'
 
-import { env } from 'shared/runtime'
 import NetSwitch from 'os/view/actionCenter/settings/network/netSwitch'
+
+const { env } = window._sentre
 
 const SecureMethods = () => {
   return (

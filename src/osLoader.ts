@@ -105,3 +105,8 @@ export const fetchRegister = async (): Promise<SenReg> => {
     return {}
   }
 }
+
+export const onSwitchNetwork = (value: Net) => {
+  storage.set('network', value)
+  return window.location.reload()
+}

@@ -1,9 +1,9 @@
 import lunr, { Index } from 'lunr'
 import { TokenListProvider, TokenInfo } from '@solana/spl-token-registry'
 
-import { net, chainId } from 'shared/runtime'
 import supplementary, { sntr, sol } from './supplementary'
 
+const { net, chainId } = window._sentre
 console.log('Debug OS Isolation:', process.env.REACT_APP_ID)
 
 class TokenProvider {

@@ -1,7 +1,7 @@
-import { net, env } from 'shared/runtime'
 import sol from './sol.config'
 import register from './register.config'
 
+const { net, env } = window._sentre
 const configs = {
   sol: sol[net],
   register: register[env],

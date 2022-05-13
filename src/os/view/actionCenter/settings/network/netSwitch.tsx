@@ -1,6 +1,6 @@
 import { Select } from 'antd'
 
-import { net, onSwitchNetwork } from 'shared/runtime'
+const { net, onSwitchNetwork } = window._sentre
 
 const NetSwitch = () => {
   return (

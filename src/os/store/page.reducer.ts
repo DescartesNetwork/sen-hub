@@ -3,12 +3,11 @@ import { account } from '@senswap/sen-js'
 
 import PDB from 'shared/pdb'
 import configs from 'os/configs'
-import { env } from 'shared/runtime'
 
 const {
   register: { extra, devAppId },
 } = configs
-
+const { env } = window._sentre
 /**
  * Interface & Utility
  */
@@ -31,7 +30,7 @@ const troubleshoot = (register: SenReg, appIds?: AppIds): AppIds => {
 
 const NAME = 'page'
 const initialState: PageState = {
-  register: { ...extra, ...window._sentre.register },
+  register: { ...window._sentre.register, ...extra },
   appIds: [],
 }
 

@@ -1,9 +1,9 @@
 import { account, utils } from '@senswap/sen-js'
 import numbro from 'numbro'
 
-import { net } from 'shared/runtime'
 import { DataLoader } from './dataloader'
 
+const { net } = window._sentre
 /**
  * Delay by async/await
  * @param ms - milisenconds
