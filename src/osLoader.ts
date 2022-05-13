@@ -3,6 +3,9 @@ import { Connection } from '@solana/web3.js'
 import storage from './shared/storage'
 import registerConfig from 'os/configs/register.config'
 
+/**
+ * Environment
+ */
 export const getEnv = (): Env => {
   switch (process.env.REACT_APP_ENV) {
     case 'development':

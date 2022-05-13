@@ -15,6 +15,7 @@ import {
 const OsLoading = () => {
   return <div>Loading...</div>
 }
+
 const OsLoader = () => {
   const [loading, setLoading] = useState(true)
 
@@ -38,7 +39,6 @@ const OsLoader = () => {
       value: window._sentre,
       writable: false,
     })
-
     // Start OS
     setLoading(false)
   }, [])
