@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunklucid=globalThis.webpackChunklucid||[]).push([[28],{69112:(a,e,c)=>{c.r(e),c.d(e,{logo:()=>i,panels:()=>p,readme:()=>l});const d=c.p+"static/media/panel.6ce7bc345912340df001.png",i=c.p+"static/media/logo.da175f6d5d1564b6bc58.png",l=c.p+"static/media/README.ff93448fef94ea73029b.md",p=[d]}}]);
+//# sourceMappingURL=28.ca712b17.chunk.js.map
