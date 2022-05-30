@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 
 import { Row, Col, Card, Button } from 'antd'
@@ -10,7 +11,6 @@ import { RootState, useRootSelector } from 'os/store'
 import { CustomCategory } from '../appCategory/hooks'
 
 import './index.os.less'
-import { useEffect } from 'react'
 
 const AppViewer = () => {
   const history = useHistory()
