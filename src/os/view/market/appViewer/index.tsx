@@ -6,14 +6,22 @@ import ScreenShot from './screenshot'
 import IonIcon from '@sentre/antd-ionicon'
 import AppCategorySlice from '../appCategory/slice'
 
+import { RootState, useRootSelector } from 'os/store'
 import { CustomCategory } from '../appCategory/hooks'
+
 import './index.os.less'
+import { useEffect } from 'react'
 
 const AppViewer = () => {
   const history = useHistory()
   const { appId } = useParams<{ appId: string }>()
+  const register = useRootSelector((state: RootState) => state.page.register)
 
   const onBack = () => history.goBack()
+
+  useEffect(() => {
+    if (!register[appId]) history.push('/store')
+  }, [appId, history, register])
 
   return (
     <Row gutter={[24, 24]} justify="center">
