@@ -24,7 +24,7 @@ const troubleshoot = (register: SenReg, appIds?: AppIds): AppIds => {
     appIds.unshift(devAppId)
   return appIds.filter((appId) => register[appId])
 }
-const fetchRegister = async () => {
+export const fetchRegister = async () => {
   try {
     const res = await fetch(senreg)
     return await res.json()
@@ -59,7 +59,7 @@ export const loadRegister = createAsyncThunk<
   const register = await fetchRegister()
   const db = new PDB(walletAddress).createInstance('sentre')
   const localRegister: SenReg = (await db.getItem('registers')) || {}
-  return { register: { ...localRegister, ...register, ...extra } }
+  return { register: { ...register, ...localRegister, ...extra } }
 })
 
 // For sandbox only
@@ -76,9 +76,6 @@ export const installManifest = createAsyncThunk<
     throw new Error('Wallet is not connected yet.')
   if (appIds.includes(manifest.appId))
     throw new Error('Cannot run sandbox for an installed application.')
-  if (Object.keys(register).includes(manifest.appId)) {
-    throw new Error('Cannot run a registered application through sanbox.')
-  }
   const newAppIds: AppIds = [...appIds]
   newAppIds.push(manifest.appId)
   const newRegister: SenReg = { ...register }
@@ -137,15 +134,20 @@ export const installApp = createAsyncThunk<
 >(`${NAME}/installApp`, async (appId, { getState }) => {
   const {
     wallet: { address: walletAddress },
-    page: { appIds },
+    page: { appIds, register },
   } = getState()
   if (!account.isAddress(walletAddress))
     throw new Error('Wallet is not connected yet.')
   if (appIds.includes(appId)) return {}
   const newAppIds: AppIds = [...appIds]
+  const newRegister = { ...register }
   newAppIds.push(appId)
   const db = new PDB(walletAddress).createInstance('sentre')
+  if (newRegister[appId]) {
+    delete newRegister[appId]
+  }
   await db.setItem('appIds', newAppIds)
+  await db.setItem('registers', newRegister)
   return { appIds: newAppIds }
 })
 

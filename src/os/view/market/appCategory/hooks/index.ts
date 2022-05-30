@@ -1,6 +1,4 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-
-import { useRootSelector, RootState } from 'os/store'
 import {
   CategoryFilter,
   RelatedCategory,
@@ -8,6 +6,7 @@ import {
   findSuggestedApps,
   findTaggedApps,
 } from './custom'
+import { fetchRegister } from 'os/store/page.reducer'
 
 export enum CustomCategory {
   suggest = 'for-you',
@@ -26,7 +25,6 @@ export const useAppCategory = ({
   related,
   filter,
 }: CategoryOptions) => {
-  const register = useRootSelector((state: RootState) => state.page.register)
   const [appIds, setAppIds] = useState<AppIds>([])
 
   const title = useMemo(() => {
@@ -42,6 +40,7 @@ export const useAppCategory = ({
    */
   const findApps = useCallback(async () => {
     let appIds: AppIds = []
+    const register = await fetchRegister()
     switch (category) {
       case CustomCategory.suggest:
         appIds = findSuggestedApps(related || {}, register)
@@ -52,7 +51,7 @@ export const useAppCategory = ({
     }
     if (filter) appIds = filterApp(register, appIds, filter)
     return setAppIds(appIds)
-  }, [register, category, related, filter])
+  }, [category, related, filter])
 
   useEffect(() => {
     findApps()
