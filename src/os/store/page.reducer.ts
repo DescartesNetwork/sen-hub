@@ -59,7 +59,7 @@ export const loadRegister = createAsyncThunk<
   const register = await fetchRegister()
   const db = new PDB(walletAddress).createInstance('sentre')
   const localRegister: SenReg = (await db.getItem('registers')) || {}
-  return { register: { ...register, ...localRegister, ...extra } }
+  return { register: { ...localRegister, ...register, ...extra } }
 })
 
 // For sandbox only
@@ -76,6 +76,9 @@ export const installManifest = createAsyncThunk<
     throw new Error('Wallet is not connected yet.')
   if (appIds.includes(manifest.appId))
     throw new Error('Cannot run sandbox for an installed application.')
+  if (Object.keys(register).includes(manifest.appId)) {
+    throw new Error('Cannot run a registered application through sanbox.')
+  }
   const newAppIds: AppIds = [...appIds]
   newAppIds.push(manifest.appId)
   const newRegister: SenReg = { ...register }
