@@ -1,3 +1,4 @@
+import LazyLoad from '@sentre/react-lazyload'
 import { Card, Col, Row, Space, Typography } from 'antd'
 import { MintAvatar, MintName, MintSymbol } from 'shared/antd/mint'
 
@@ -16,7 +17,9 @@ const MintCard = ({ mintAddress, onClick = () => {} }: MintSelectionProps) => {
     >
       <Row gutter={[16, 16]} align="middle">
         <Col>
-          <MintAvatar mintAddress={mintAddress} size={36} />
+          <LazyLoad height={36} overflow throttle>
+            <MintAvatar mintAddress={mintAddress} size={36} />
+          </LazyLoad>
         </Col>
         <Col>
           <Space direction="vertical" size={0}>
