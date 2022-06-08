@@ -19,10 +19,8 @@ export const useSortMints = (mints: string[]) => {
   const sortMints = useCallback(
     async (mintAddresses: string[]) => {
       const sortedMints = mintAddresses.sort((a, b) => {
-        let isVerifyA = verify(a)
-        let isVerifyB = verify(b)
-        let amountA = mapMintAmounts[a] || (isVerifyA ? 1 : -1)
-        let amountB = mapMintAmounts[b] || (isVerifyB ? 1 : -1)
+        let amountA = mapMintAmounts[a] || (verify(a) ? 1 : -1)
+        let amountB = mapMintAmounts[b] || (verify(b) ? 1 : -1)
 
         return Number(amountB) - Number(amountA)
       })

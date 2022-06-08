@@ -21,7 +21,7 @@ const NumericInput = forwardRef(
       onChange = () => {},
       ...props
     }: InputNumberProps & {
-      onValue?: (val: number | null) => void
+      onValue?: (val: string) => void
       max?: string | number
     },
     ref: any,
@@ -41,7 +41,7 @@ const NumericInput = forwardRef(
         }
         if (max && val > parseFloat(max.toString()))
           return onError('Not enough balance')
-        return onValue(val)
+        return onValue(val.toString())
       },
       [max, onValue],
     )
@@ -61,7 +61,7 @@ const NumericInput = forwardRef(
           type="number"
           controls={false}
           onChange={(e: string | number | null) => {
-            if (e === null || typeof e === 'string') return onValue(null)
+            if (e === null || typeof e === 'string') return onValue('')
             onAmount(e)
           }}
         />

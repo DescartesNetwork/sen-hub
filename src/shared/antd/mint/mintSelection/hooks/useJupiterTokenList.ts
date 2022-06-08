@@ -1,21 +1,21 @@
 import { useCallback, useEffect, useState } from 'react'
-import { DataLoader } from 'shared/dataloader'
+import useSWRImmutable from 'swr/immutable'
+
+const fetchJupiterList = async () => {
+  const data = await fetch('https://cache.jup.ag/tokens')
+  return data.json()
+}
 
 export const useJupiterTokenList = () => {
   const [jupiterTokenList, setJupiterTokenList] = useState<string[]>([])
+  const { data } = useSWRImmutable('fetchJpTokenList', fetchJupiterList)
 
-  const fetchJupiterList = async () => {
-    const data = await fetch('https://cache.jup.ag/tokens')
-    return data.json()
-  }
-
-  const setTokenList = useCallback(async () => {
-    const tokenList = await DataLoader.load('fetchJpTokenList', () =>
-      fetchJupiterList(),
-    )
-    const formatedTokenList = tokenList.map((token: any) => token.address)
-    setJupiterTokenList(formatedTokenList)
-  }, [])
+  useEffect(() => {
+    if (data) {
+      const formatedTokenList = data.map((token: any) => token.address)
+      setJupiterTokenList(formatedTokenList)
+    }
+  }, [data])
 
   const verify = useCallback(
     (address: string): boolean => {
@@ -23,10 +23,6 @@ export const useJupiterTokenList = () => {
     },
     [jupiterTokenList],
   )
-
-  useEffect(() => {
-    setTokenList()
-  }, [setTokenList])
 
   return { verify }
 }
