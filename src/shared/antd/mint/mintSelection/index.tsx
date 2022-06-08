@@ -16,7 +16,6 @@ import LoadMore from './loadMore'
 import { useRecommendedMints } from './hooks/useRecommendedMints'
 import { useSearchedMints } from './hooks/useSearchedMints'
 import { useSortMints } from 'shared/hooks/useSortMints'
-import { useJupiterTokenList } from './hooks/useJupiterTokenList'
 
 const LIMIT = 20
 const AMOUNT_BEFORE_LOAD_MORE = 5
