@@ -3,6 +3,8 @@ import { useState, forwardRef, useCallback } from 'react'
 import { Tooltip, Space, InputNumber, InputNumberProps } from 'antd'
 import IonIcon from '@sentre/antd-ionicon'
 
+import './index.less'
+
 let timeoutId: ReturnType<typeof setTimeout> | undefined
 
 /**
@@ -61,7 +63,7 @@ const NumericInput = forwardRef(
           type="number"
           controls={false}
           onChange={(e: string | number | null) => {
-            if (e === null || typeof e === 'string') return onValue('')
+            if (e === null || typeof e === 'string') return
             onAmount(e)
           }}
         />

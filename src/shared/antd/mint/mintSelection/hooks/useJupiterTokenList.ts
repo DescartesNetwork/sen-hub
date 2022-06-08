@@ -1,27 +1,25 @@
 import { useCallback, useEffect, useState } from 'react'
 import useSWRImmutable from 'swr/immutable'
 
-const fetchJupiterTokenList = async () => {
+const fetchJptTokens = async () => {
   const data = await fetch('https://cache.jup.ag/tokens')
   return data.json()
 }
 
 export const useJupiterTokenList = () => {
-  const [jupiterTokenList, setJupiterTokenList] = useState<
-    Map<string, boolean>
-  >(new Map())
-  const { data } = useSWRImmutable('fetchJpTokenList', fetchJupiterTokenList)
+  const [jupiterTokenList, setJupiterTokenList] = useState(
+    new Map<string, boolean>(),
+  )
+  const { data: tokens } = useSWRImmutable('fetchJptTokens', fetchJptTokens)
 
   useEffect(() => {
-    if (data) {
-      const formattedTokenList = new Map<string, boolean>()
-      for (let i = 0; i < data.length; i++) {
-        formattedTokenList.set(data.address, true)
-      }
-
-      setJupiterTokenList(formattedTokenList)
+    if (!tokens) return
+    const tokenMap = new Map<string, boolean>()
+    for (const token of tokens) {
+      tokenMap.set(token.address, true)
     }
-  }, [data])
+    setJupiterTokenList(tokenMap)
+  }, [tokens])
 
   const verify = useCallback(
     (address: string): boolean => {
