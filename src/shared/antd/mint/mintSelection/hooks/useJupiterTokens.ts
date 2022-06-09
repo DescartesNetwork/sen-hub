@@ -6,10 +6,8 @@ const fetchJptTokens = async () => {
   return data.json()
 }
 
-export const useJupiterTokenList = () => {
-  const [jupiterTokenList, setJupiterTokenList] = useState(
-    new Map<string, boolean>(),
-  )
+export const useJupiterTokens = () => {
+  const [jupiterTokens, setJupiterTokens] = useState(new Map<string, boolean>())
   const { data: tokens } = useSWRImmutable('fetchJptTokens', fetchJptTokens)
 
   useEffect(() => {
@@ -18,14 +16,14 @@ export const useJupiterTokenList = () => {
     for (const token of tokens) {
       tokenMap.set(token.address, true)
     }
-    setJupiterTokenList(tokenMap)
+    setJupiterTokens(tokenMap)
   }, [tokens])
 
   const verify = useCallback(
     (address: string): boolean => {
-      return jupiterTokenList.has(address)
+      return jupiterTokens.has(address)
     },
-    [jupiterTokenList],
+    [jupiterTokens],
   )
 
   return { verify }

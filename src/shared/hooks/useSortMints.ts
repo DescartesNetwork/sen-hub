@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useAccount } from '@senhub/providers'
 
-import { useJupiterTokenList } from 'shared/antd/mint/mintSelection/hooks/useJupiterTokenList'
+import { useJupiterTokens } from 'shared/antd/mint/mintSelection/hooks/useJupiterTokens'
 
 export const useSortMints = (mints: string[]) => {
   const [sortedMints, setSortedMints] = useState<string[]>([])
-  const { verify } = useJupiterTokenList()
+  const { verify } = useJupiterTokens()
   const { accounts } = useAccount()
 
   const mapMintAmounts = useMemo(() => {

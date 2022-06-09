@@ -16,18 +16,15 @@ let timeoutId: ReturnType<typeof setTimeout> | undefined
  * @param onValue - A triggerred function if a valid number
  */
 const NumericInput = forwardRef(
-  (
-    {
-      max,
-      onValue = () => {},
-      onChange = () => {},
-      ...props
-    }: InputNumberProps & {
-      onValue?: (val: string) => void
-      max?: string | number
-    },
-    ref: any,
-  ) => {
+  ({
+    max,
+    onValue = () => {},
+    onChange = () => {},
+    ...props
+  }: InputNumberProps & {
+    onValue?: (val: string) => void
+    max?: string | number
+  }) => {
     const [error, setError] = useState('')
 
     // Handle amount
@@ -62,9 +59,9 @@ const NumericInput = forwardRef(
           {...props}
           type="number"
           controls={false}
-          onChange={(e: string | number | null) => {
-            if (e === null || typeof e === 'string') return
-            onAmount(e)
+          onChange={(value) => {
+            if (value === null || typeof value === 'string') return
+            onAmount(value)
           }}
         />
       </Tooltip>
