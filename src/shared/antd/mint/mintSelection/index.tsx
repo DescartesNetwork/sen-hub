@@ -5,7 +5,6 @@ import {
   useEffect,
   useState,
 } from 'react'
-import LazyLoad from '@sentre/react-lazyload'
 
 import { Button, Empty, Col, Input, Modal, Row, Space } from 'antd'
 import IonIcon from '@sentre/antd-ionicon'
@@ -129,9 +128,8 @@ const MintSelection = ({
               {sortedMints.length ? (
                 sortedMints.slice(0, offset).map((mintAddress, index) => (
                   <Col span={24} key={mintAddress}>
-                    <LazyLoad height={60} overflow throttle={500}>
-                      <MintCard mintAddress={mintAddress} onClick={onSelect} />
-                    </LazyLoad>
+                    <MintCard mintAddress={mintAddress} onClick={onSelect} />
+
                     {index === offset - AMOUNT_BEFORE_LOAD_MORE && (
                       <LoadMore callback={() => setOffset(offset + LIMIT)} />
                     )}
