@@ -24,7 +24,7 @@ const troubleshoot = (register: SenReg, appIds?: AppIds): AppIds => {
     appIds.unshift(devAppId)
   return appIds.filter((appId) => register[appId])
 }
-export const fetchRegister = async () => {
+const fetchRegister = async () => {
   try {
     const res = await fetch(senreg)
     return await res.json()
@@ -78,12 +78,12 @@ export const installManifest = createAsyncThunk<
     throw new Error('Cannot run sandbox for an installed application.')
   const newAppIds: AppIds = [...appIds]
   newAppIds.push(manifest.appId)
-  const newRegister: SenReg = { ...register }
-  newRegister[manifest.appId] = manifest
   const db = new PDB(walletAddress).createInstance('sentre')
   await db.setItem('appIds', newAppIds)
+  const newRegister: SenReg = { ...(await db.getItem('registers')) }
+  newRegister[manifest.appId] = manifest
   await db.setItem('registers', newRegister)
-  return { appIds: newAppIds, register: newRegister }
+  return { appIds: newAppIds, register: { ...register, ...newRegister } }
 })
 
 /**
@@ -161,13 +161,16 @@ export const uninstallApp = createAsyncThunk<
   const newAppIds = appIds.filter((_appId: string) => _appId !== appId)
   const newRegister = { ...register }
   delete newRegister[appId]
-  const fetchedRegister = await fetchRegister()
   const pdb = new PDB(walletAddress)
   const db = pdb.createInstance('sentre')
+  const localStrRegister: SenReg = { ...(await db.getItem('registers')) }
+  if (!!localStrRegister[appId]) {
+    delete localStrRegister[appId]
+  }
   await db.setItem('appIds', newAppIds)
-  await db.setItem('registers', { ...newRegister, ...fetchedRegister })
+  await db.setItem('registers', { ...localStrRegister })
   await pdb.dropInstance(appId)
-  return { appIds: newAppIds, register: { ...newRegister, ...fetchedRegister } }
+  return { appIds: newAppIds, register: { ...newRegister } }
 })
 
 /**
