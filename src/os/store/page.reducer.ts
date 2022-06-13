@@ -48,13 +48,19 @@ const initialState: PageState = {
  */
 
 // Must fetch register at very first of the process
-export const loadRegister = createAsyncThunk(
-  `${NAME}/loadRegister`,
-  async () => {
-    const register = await fetchRegister()
-    return { register: { ...register, ...extra } }
-  },
-)
+export const loadRegister = createAsyncThunk<
+  Partial<PageState>,
+  void,
+  { state: any }
+>(`${NAME}/loadRegister`, async (_, { getState }) => {
+  const {
+    wallet: { address: walletAddress },
+  } = getState()
+  const register = await fetchRegister()
+  const db = new PDB(walletAddress).createInstance('sentre')
+  const localRegister: SenReg = (await db.getItem('registers')) || {}
+  return { register: { ...register, ...localRegister, ...extra } }
+})
 
 // For sandbox only
 export const installManifest = createAsyncThunk<
@@ -72,9 +78,12 @@ export const installManifest = createAsyncThunk<
     throw new Error('Cannot run sandbox for an installed application.')
   const newAppIds: AppIds = [...appIds]
   newAppIds.push(manifest.appId)
-  const newRegister: SenReg = { ...register }
+  const db = new PDB(walletAddress).createInstance('sentre')
+  await db.setItem('appIds', newAppIds)
+  const newRegister: SenReg = { ...(await db.getItem('registers')) }
   newRegister[manifest.appId] = manifest
-  return { appIds: newAppIds, register: newRegister }
+  await db.setItem('registers', newRegister)
+  return { appIds: newAppIds, register: { ...register, ...newRegister } }
 })
 
 /**
@@ -152,7 +161,12 @@ export const uninstallApp = createAsyncThunk<
   const newAppIds = appIds.filter((_appId: string) => _appId !== appId)
   const pdb = new PDB(walletAddress)
   const db = pdb.createInstance('sentre')
+  const localStrRegister: SenReg = { ...(await db.getItem('registers')) }
+  if (!!localStrRegister[appId]) {
+    delete localStrRegister[appId]
+  }
   await db.setItem('appIds', newAppIds)
+  await db.setItem('registers', { ...localStrRegister })
   await pdb.dropInstance(appId)
   return { appIds: newAppIds }
 })

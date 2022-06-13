@@ -1,3 +1,5 @@
+import { useHistory } from 'react-router-dom'
+
 import { Row, Col, Card, Typography, Upload } from 'antd'
 import IonIcon from '@sentre/antd-ionicon'
 
@@ -6,6 +8,7 @@ import { installManifest } from 'os/store/page.reducer'
 
 const Sandbox = () => {
   const dispatch = useRootDispatch<RootDispatch>()
+  const history = useHistory()
 
   const upload = async (file: File) => {
     const reader = new FileReader()
@@ -13,6 +16,7 @@ const Sandbox = () => {
       const manifest = JSON.parse(e.target?.result as string)
       try {
         await dispatch(installManifest(manifest)).unwrap()
+        history.push(`/app/${manifest.appId}`)
         return window.notify({
           type: 'success',
           description: 'The DApp has been added to your workspace.',

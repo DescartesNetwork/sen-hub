@@ -7,12 +7,12 @@ import IonIcon from '@sentre/antd-ionicon'
 import AppCategorySlice from '../appCategory/slice'
 
 import { CustomCategory } from '../appCategory/hooks'
+
 import './index.os.less'
 
 const AppViewer = () => {
   const history = useHistory()
   const { appId } = useParams<{ appId: string }>()
-
   const onBack = () => history.goBack()
 
   return (

@@ -1,6 +1,4 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-
-import { useRootSelector, RootState } from 'os/store'
 import {
   CategoryFilter,
   RelatedCategory,
@@ -8,6 +6,8 @@ import {
   findSuggestedApps,
   findTaggedApps,
 } from './custom'
+import { RootState, useRootSelector } from 'os/store'
+import PDB from 'shared/pdb'
 
 export enum CustomCategory {
   suggest = 'for-you',
@@ -27,7 +27,22 @@ export const useAppCategory = ({
   filter,
 }: CategoryOptions) => {
   const register = useRootSelector((state: RootState) => state.page.register)
+  const walletAddress = useRootSelector(
+    (state: RootState) => state.wallet.address,
+  )
   const [appIds, setAppIds] = useState<AppIds>([])
+  const [verifiedRegister, setVerifiedRegister] = useState<SenReg>({})
+
+  const verifyRegister = useCallback(async () => {
+    const db = new PDB(walletAddress).createInstance('sentre')
+    const localRegister: SenReg = { ...(await db.getItem('registers')) }
+    const filteredRegister: SenReg = {}
+    for (const i in register) {
+      if (localRegister[i]) continue
+      filteredRegister[i] = register[i]
+    }
+    setVerifiedRegister(filteredRegister)
+  }, [register, walletAddress])
 
   const title = useMemo(() => {
     if (defaultTitle) return defaultTitle
@@ -42,17 +57,22 @@ export const useAppCategory = ({
    */
   const findApps = useCallback(async () => {
     let appIds: AppIds = []
+
     switch (category) {
       case CustomCategory.suggest:
-        appIds = findSuggestedApps(related || {}, register)
+        appIds = findSuggestedApps(related || {}, verifiedRegister)
         break
       default:
-        appIds = findTaggedApps(category, register)
+        appIds = findTaggedApps(category, verifiedRegister)
         break
     }
-    if (filter) appIds = filterApp(register, appIds, filter)
+    if (filter) appIds = filterApp(verifiedRegister, appIds, filter)
     return setAppIds(appIds)
-  }, [register, category, related, filter])
+  }, [category, filter, verifiedRegister, related])
+
+  useEffect(() => {
+    verifyRegister()
+  }, [verifyRegister])
 
   useEffect(() => {
     findApps()
