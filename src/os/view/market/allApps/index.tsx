@@ -1,20 +1,20 @@
+import { useCallback, useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import { Card, Col, Row, Typography } from 'antd'
 import AppIcon from 'os/components/appIcon'
 
 import { RootState, useRootSelector } from 'os/store'
-import { useCallback, useEffect, useState } from 'react'
 import PDB from 'shared/pdb'
 
 const AllApps = () => {
-  const history = useHistory()
-  const register = useRootSelector((state: RootState) => state.page.register)
   const walletAddress = useRootSelector(
     (state: RootState) => state.wallet.address,
   )
-
+  const register = useRootSelector((state: RootState) => state.page.register)
+  const history = useHistory()
   const [appIds, setAppIds] = useState<string[]>([])
+
   const verifyApp = useCallback(async () => {
     const db = new PDB(walletAddress).createInstance('sentre')
     const localRegister: SenReg = { ...(await db.getItem('registers')) }
@@ -26,7 +26,7 @@ const AllApps = () => {
 
   useEffect(() => {
     verifyApp()
-  })
+  }, [verifyApp])
 
   return (
     <Card bordered={false} className="glass" bodyStyle={{ padding: 32 }}>

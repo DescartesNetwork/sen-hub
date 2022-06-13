@@ -153,14 +153,12 @@ export const uninstallApp = createAsyncThunk<
 >(`${NAME}/uninstallApp`, async (appId, { getState }) => {
   const {
     wallet: { address: walletAddress },
-    page: { appIds, register },
+    page: { appIds },
   } = getState()
   if (!account.isAddress(walletAddress))
     throw new Error('Wallet is not connected yet.')
   if (!appIds.includes(appId)) return {}
   const newAppIds = appIds.filter((_appId: string) => _appId !== appId)
-  const newRegister = { ...register }
-  delete newRegister[appId]
   const pdb = new PDB(walletAddress)
   const db = pdb.createInstance('sentre')
   const localStrRegister: SenReg = { ...(await db.getItem('registers')) }
@@ -170,7 +168,7 @@ export const uninstallApp = createAsyncThunk<
   await db.setItem('appIds', newAppIds)
   await db.setItem('registers', { ...localStrRegister })
   await pdb.dropInstance(appId)
-  return { appIds: newAppIds, register: { ...newRegister } }
+  return { appIds: newAppIds }
 })
 
 /**
