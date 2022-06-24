@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.3adc8996.js",
+    "main.js": "/static/js/main.71d8a99b.js",
     "senhub.js": "/index.js",
     "static/css/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.eee6c252.chunk.css": "/static/css/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.eee6c252.chunk.css",
-    "static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.6f26e924.chunk.js": "/static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.6f26e924.chunk.js",
+    "static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.e58a01c5.chunk.js": "/static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.e58a01c5.chunk.js",
     "static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js",
     "static/js/src_os_store_context_ts-_3b660.41e0ae0f.chunk.js": "/static/js/src_os_store_context_ts-_3b660.41e0ae0f.chunk.js",
     "static/js/src_os_providers_index_tsx-src_shared_pdb_index_ts.d6f30ed3.chunk.js": "/static/js/src_os_providers_index_tsx-src_shared_pdb_index_ts.d6f30ed3.chunk.js",
@@ -69,10 +69,10 @@
     "static/media/icon-telegram.svg": "/static/media/icon-telegram.2450489f40d03000fe65fc1c6f238d85.svg",
     "static.app.tsx": "/senhub-asset-senhub.json",
     "static/media/README.md": "/static/media/README.ff93448fef94ea73029b.md",
-    "main.3adc8996.js.map": "/static/js/main.3adc8996.js.map",
+    "main.71d8a99b.js.map": "/static/js/main.71d8a99b.js.map",
     "index.js.map": "/index.js.map",
     "src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.eee6c252.chunk.css.map": "/static/css/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.eee6c252.chunk.css.map",
-    "src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.6f26e924.chunk.js.map": "/static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.6f26e924.chunk.js.map",
+    "src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.e58a01c5.chunk.js.map": "/static/js/src_bootstrap_tsx-src_os_static_images_bg_dark-bg_png-src_os_static_images_bg_light-bg_png-sr-b81640.e58a01c5.chunk.js.map",
     "vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map",
     "src_os_store_context_ts-_3b660.41e0ae0f.chunk.js.map": "/static/js/src_os_store_context_ts-_3b660.41e0ae0f.chunk.js.map",
     "src_os_providers_index_tsx-src_shared_pdb_index_ts.d6f30ed3.chunk.js.map": "/static/js/src_os_providers_index_tsx-src_shared_pdb_index_ts.d6f30ed3.chunk.js.map",
@@ -99,6 +99,6 @@
     "src_os_store_index_ts-src_shared_pdb_ipfs_ts.03cd7478.chunk.js.map": "/static/js/src_os_store_index_ts-src_shared_pdb_ipfs_ts.03cd7478.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3adc8996.js"
+    "static/js/main.71d8a99b.js"
   ]
 }
