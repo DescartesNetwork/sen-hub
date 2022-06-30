@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.c16061d4.js",
+    "main.js": "/static/js/main.57289f92.js",
     "senhub.js": "/index.js",
-    "static/js/src_bootstrap_tsx.3e468112.chunk.js": "/static/js/src_bootstrap_tsx.3e468112.chunk.js",
+    "static/js/src_bootstrap_tsx.226e72f0.chunk.js": "/static/js/src_bootstrap_tsx.226e72f0.chunk.js",
     "static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js",
     "static/js/node_modules_react_jsx-runtime_js.2e838fbf.chunk.js": "/static/js/node_modules_react_jsx-runtime_js.2e838fbf.chunk.js",
     "static/js/node_modules_prop-types_index_js-node_modules_react-router-dom_esm_react-router-dom_js.bad08b10.chunk.js": "/static/js/node_modules_prop-types_index_js-node_modules_react-router-dom_esm_react-router-dom_js.bad08b10.chunk.js",
     "static/js/node_modules_react_index_js.fa366fb9.chunk.js": "/static/js/node_modules_react_index_js.fa366fb9.chunk.js",
-    "static/js/src_bootstrap_app_tsx.68da308a.chunk.js": "/static/js/src_bootstrap_app_tsx.68da308a.chunk.js",
+    "static/js/src_bootstrap_app_tsx.0b65ca18.chunk.js": "/static/js/src_bootstrap_app_tsx.0b65ca18.chunk.js",
     "static/js/vendors-node_modules_react-dom_index_js.7eb683cd.chunk.js": "/static/js/vendors-node_modules_react-dom_index_js.7eb683cd.chunk.js",
     "static/js/_18f2-_0b7d-_25ed-_8131-_3fc0-_e4dd-_7bec-_ec71-_df0e-_887c-_c738-_9820-_7d1a-_b254-_ed1b-_d1-147343.f3aea1b5.chunk.js": "/static/js/_18f2-_0b7d-_25ed-_8131-_3fc0-_e4dd-_7bec-_ec71-_df0e-_887c-_c738-_9820-_7d1a-_b254-_ed1b-_d1-147343.f3aea1b5.chunk.js",
     "static/js/node_modules_web-vitals_dist_web-vitals_js.b46160ca.chunk.js": "/static/js/node_modules_web-vitals_dist_web-vitals_js.b46160ca.chunk.js",
@@ -59,14 +59,14 @@
     "static/media/icon-telegram.svg": "/static/media/icon-telegram.2450489f40d03000fe65fc1c6f238d85.svg",
     "static.app.tsx": "/senhub-asset-senhub.json",
     "static/media/README.md": "/static/media/README.ff93448fef94ea73029b.md",
-    "main.c16061d4.js.map": "/static/js/main.c16061d4.js.map",
+    "main.57289f92.js.map": "/static/js/main.57289f92.js.map",
     "index.js.map": "/index.js.map",
-    "src_bootstrap_tsx.3e468112.chunk.js.map": "/static/js/src_bootstrap_tsx.3e468112.chunk.js.map",
+    "src_bootstrap_tsx.226e72f0.chunk.js.map": "/static/js/src_bootstrap_tsx.226e72f0.chunk.js.map",
     "vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map",
     "node_modules_react_jsx-runtime_js.2e838fbf.chunk.js.map": "/static/js/node_modules_react_jsx-runtime_js.2e838fbf.chunk.js.map",
     "node_modules_prop-types_index_js-node_modules_react-router-dom_esm_react-router-dom_js.bad08b10.chunk.js.map": "/static/js/node_modules_prop-types_index_js-node_modules_react-router-dom_esm_react-router-dom_js.bad08b10.chunk.js.map",
     "node_modules_react_index_js.fa366fb9.chunk.js.map": "/static/js/node_modules_react_index_js.fa366fb9.chunk.js.map",
-    "src_bootstrap_app_tsx.68da308a.chunk.js.map": "/static/js/src_bootstrap_app_tsx.68da308a.chunk.js.map",
+    "src_bootstrap_app_tsx.0b65ca18.chunk.js.map": "/static/js/src_bootstrap_app_tsx.0b65ca18.chunk.js.map",
     "vendors-node_modules_react-dom_index_js.7eb683cd.chunk.js.map": "/static/js/vendors-node_modules_react-dom_index_js.7eb683cd.chunk.js.map",
     "node_modules_web-vitals_dist_web-vitals_js.b46160ca.chunk.js.map": "/static/js/node_modules_web-vitals_dist_web-vitals_js.b46160ca.chunk.js.map",
     "node_modules_react-router-dom_esm_react-router-dom_js.abde1a18.chunk.js.map": "/static/js/node_modules_react-router-dom_esm_react-router-dom_js.abde1a18.chunk.js.map",
@@ -78,6 +78,6 @@
     "vendors-node_modules_react-redux_es_index_js.9938947e.chunk.js.map": "/static/js/vendors-node_modules_react-redux_es_index_js.9938947e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c16061d4.js"
+    "static/js/main.57289f92.js"
   ]
 }
