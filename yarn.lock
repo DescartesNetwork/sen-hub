@@ -2065,10 +2065,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.0.29":
-  version "3.0.29"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.29.tgz#149dbe0d1b35dc6bbf7d17bab06ddc80f48b3cb0"
-  integrity sha512-O78DMwJW5YdqRse8tAMXW+HsBqO+U4lelifewMvOUoT7Jxl4BjWqJ1SUuWGuSF0QZCgXT+3sOvkvguRIktecSg==
+"@sentre/senhub@^3.0.34":
+  version "3.0.34"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.34.tgz#1f0d01a0809ffa66f9ad975955cc9568f5352f23"
+  integrity sha512-KnrcuGCBpLF5ccg41a/EzwroUL6ig5VertZnv7eJJgTRCZ5dGQ9MUraHclDatL6hhQkZATdDZGkf7sWHBRfHOw==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -2083,13 +2083,13 @@
     antd "^4.21.1"
     bn.js "^5.2.0"
     bs58 "^4.0.1"
+    copy-to-clipboard "^3.3.1"
     ipfs-core "^0.14.2"
     js-file-download "^0.4.12"
     localforage "^1.10.0"
     lunr "^2.3.9"
     numbro "^2.3.5"
     qrcode.react "^3.0.0"
-    react-copy-to-clipboard "^5.0.4"
     react-joyride "^2.3.2"
     react-json-view "^1.21.3"
     react-redux "^7.2.6"
@@ -2137,10 +2137,10 @@
   dependencies:
     cross-fetch "3.0.6"
 
-"@solana/web3.js@^1.29.2", "@solana/web3.js@^1.43.1":
-  version "1.45.0"
-  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.45.0.tgz#30a4a3014f8add3ac90b647d50ee1d02386b72b8"
-  integrity sha512-76NbpGLr0oOq8e5pULOjxwG0vZrSONkiC0rKBZM4Mu7qPvFD58Jp2GeXNGQcplmfHI+Zs2T4LPOVCdlrwRkA+g==
+"@solana/web3.js@1.44.3", "@solana/web3.js@^1.29.2", "@solana/web3.js@^1.43.1":
+  version "1.44.3"
+  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.44.3.tgz#a4a6ac593c3b4b0ab47fa7d716ffd9ab03542f7b"
+  integrity sha512-x6IUi1ikwgXe2fgZGeMhuGRRRp2JbqzP+Qos/zsDhkZP0TpaZhJtPXUy7h5EhmXBK4JneSpIj1SQvakVvEJ+Mw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@ethersproject/sha2" "^5.5.0"
@@ -2154,7 +2154,7 @@
     jayson "^3.4.4"
     js-sha3 "^0.8.0"
     node-fetch "2"
-    rpc-websockets "^7.5.0"
+    rpc-websockets "^7.4.2"
     secp256k1 "^4.0.2"
     superstruct "^0.14.2"
     tweetnacl "^1.0.0"
@@ -11687,14 +11687,6 @@ react-base16-styling@^0.6.0:
     lodash.flow "^3.3.0"
     pure-color "^1.2.0"
 
-react-copy-to-clipboard@^5.0.4:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
-  integrity sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==
-  dependencies:
-    copy-to-clipboard "^3.3.1"
-    prop-types "^15.8.1"
-
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.1.tgz#ba92edb4a1f379bd46ccd6bcd4e7bc398df33e73"
@@ -12280,7 +12272,7 @@ rollup@^2.43.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-rpc-websockets@^7.5.0:
+rpc-websockets@^7.4.2:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/rpc-websockets/-/rpc-websockets-7.5.0.tgz#bbeb87572e66703ff151e50af1658f98098e2748"
   integrity sha512-9tIRi1uZGy7YmDjErf1Ax3wtqdSSLIlnmL5OtOzgd5eqPKbsPpwDP5whUDO2LQay3Xp0CcHlcNSGzacNRluBaQ==

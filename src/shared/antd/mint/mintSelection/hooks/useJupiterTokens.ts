@@ -24,3 +24,4 @@ export const useJupiterTokens = () => {
   const { data } = useSWRImmutable('fetchJptTokens', loadJptTokens)
   return data
 }
+
