@@ -20,7 +20,12 @@
     "web-vitals": "^2.1.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "yarn start:web",
+    "start:web": "craco start",
+    "start:ios": "cap run ios",
+    "start:android": "cap run android",
+    "open:ios": "cap open ios",
+    "open:android": "cap open android",
     "build": "yarn build:production",
     "build:production": "craco build",
     "build:staging": "env-cmd -f .env.staging craco build",
