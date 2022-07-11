@@ -1894,6 +1894,13 @@
   dependencies:
     react-helmet "^6.1.0"
 
+"@sentre/antd-ionicon@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.35.tgz#d5f1cfdba3da53eb201cc04f20e2db7dbc0af437"
+  integrity sha512-/pQ8wFvdo3ska8k8m/V3DexjBmmQ4774VzQuOASS3FWUV85nQkjyFvSw4kKc0OYQ4ooB/YC+mhxrEkXK6Sozpg==
+  dependencies:
+    react-helmet "^6.1.0"
+
 "@sentre/connector@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@sentre/connector/-/connector-0.0.30.tgz#c77162b7d799e12b74d8d3b65eea465d0ffb5fcc"
@@ -1901,10 +1908,10 @@
   dependencies:
     "@solana/web3.js" "^1.43.1"
 
-"@sentre/craco-plugins@^1.0.31":
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.31.tgz#17844724df7ea20e62641ce6fa360315b6ac5157"
-  integrity sha512-tb4dhZ04TJ6udTCXWEuWB+EpGn3tANVXZPRr/Mqy00VNlnOeZKqHEQtSagN23hXv6XS4KNm1mcj3QKW2QFpD8w==
+"@sentre/craco-plugins@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.35.tgz#9816fa7adf0f28d38970ea9a85db29036484e09f"
+  integrity sha512-uer73ov7XfyuZ6CODxwC/052q0utqK9uuLYo2C4H+59nrzvjoh22zyYaOaCxM3J+lQR/3fzGcCw/gZWMD4UUSw==
   dependencies:
     "@babel/cli" "^7.17.10"
     "@babel/core" "^7.18.2"
@@ -1947,10 +1954,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.0.38":
-  version "3.0.38"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.38.tgz#8cedfa7abe323cab207bf0176dd3a818e1b0124f"
-  integrity sha512-e/B1yZDaYsUSrsdgRw4kAH3U0JThZwpmf+ef3xGZf6BB1REZ0isN0CZOFlXa/l03NbBZNXH9Si8CFIabsenP2A==
+"@sentre/senhub@^3.0.43":
+  version "3.0.43"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.43.tgz#89fd429dd88261bdb22c6c45055ca4b91a7db31a"
+  integrity sha512-wpTunXcd+idZcfuIicqrSxcLehvLWHdb+wtH9UWuIr+WtK8rtUjfbaqvwNtX54JELczTh+pg6b8q3e3zWr+WLA==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
