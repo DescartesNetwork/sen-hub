@@ -1,6 +1,6 @@
 const path = require('path')
 const minimatch = require('minimatch')
-const { app, screen, session, protocol, BrowserWindow } = require('electron')
+const { app, screen, session, BrowserWindow } = require('electron')
 
 const BUILD = path.join(__dirname, 'build')
 const INDEX = `file://${path.join(BUILD, 'index.html')}`
@@ -48,16 +48,6 @@ const createMiddleware = () => {
       return callback({ responseHeaders })
     },
   )
-  // protocol.interceptFileProtocol('file', ({ url }, callback) => {
-  //   if (
-  //     !minimatch(url, `file://${BUILD}/**`) &&
-  //     !minimatch(url, 'file://**.*')
-  //   ) {
-  //     console.log(url, INDEX)
-  //     return callback({ path: INDEX })
-  //   }
-  //   return callback({})
-  // })
 }
 
 app.whenReady().then(() => {
