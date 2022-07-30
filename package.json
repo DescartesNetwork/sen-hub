@@ -1,6 +1,8 @@
 {
   "name": "senhub",
   "version": "3.0.36",
+  "homepage": "./",
+  "main": "main.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@senswap/sen-js": "^1.4.0",
@@ -9,6 +11,7 @@
     "@sentre/senhub": "^3.0.49",
     "antd": "^4.21.1",
     "bn.js": "^5.2.0",
+    "minimatch": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -27,6 +30,10 @@
     "deploy": "gh-pages -d build",
     "preserve": "yarn build:staging",
     "serve": "serve -s build -l 3000",
+    "preapp": "yarn build",
+    "app": "electron .",
+    "prepackage": "yarn build",
+    "package": "echo Not Ready Yet",
     "update": "yarn add @sentre/antd-ionicon@latest @sentre/senhub@latest && yarn add -D @sentre/craco-plugins@latest"
   },
   "eslintConfig": {
@@ -50,6 +57,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.0.0-alpha.5",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.65",
     "@sentre/craco-plugins": "^1.0.36",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
@@ -61,6 +69,8 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.1",
     "dotenv-cra": "^3.0.2",
+    "electron": "^19.0.10",
+    "electron-forge": "^5.2.4",
     "env-cmd": "^10.1.0",
     "gh-pages": "^3.2.3",
     "serve": "^12.0.1",
