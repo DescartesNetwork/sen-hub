@@ -1,18 +1,22 @@
 const path = require('path')
 const minimatch = require('minimatch')
-const { app, session, BrowserWindow } = require('electron')
+const { app, screen, session, protocol, BrowserWindow } = require('electron')
 
-const INDEX = `file://${path.join(__dirname, './build/index.html')}`
+const BUILD = path.join(__dirname, 'build')
+const INDEX = `file://${path.join(BUILD, 'index.html')}`
 
 const createWindow = () => {
+  const {
+    workAreaSize: { width, height },
+  } = screen.getPrimaryDisplay()
   const win = new BrowserWindow({
-    width: 1024,
-    height: 768,
+    width,
+    height,
     webPreferences: {
       nodeIntegration: false,
     },
   })
-  win.loadFile('./build/index.html')
+  win.loadURL(INDEX)
   win.webContents.openDevTools()
 }
 
@@ -30,10 +34,8 @@ const createMiddleware = () => {
         url !== INDEX &&
         url.startsWith('file://') &&
         resourceType === 'mainFrame'
-      ) {
-        console.log(url, resourceType)
+      )
         return callback({ redirectURL: INDEX })
-      }
       return callback({})
     },
   )
@@ -46,6 +48,16 @@ const createMiddleware = () => {
       return callback({ responseHeaders })
     },
   )
+  // protocol.interceptFileProtocol('file', ({ url }, callback) => {
+  //   if (
+  //     !minimatch(url, `file://${BUILD}/**`) &&
+  //     !minimatch(url, 'file://**.*')
+  //   ) {
+  //     console.log(url, INDEX)
+  //     return callback({ path: INDEX })
+  //   }
+  //   return callback({})
+  // })
 }
 
 app.whenReady().then(() => {

@@ -30,7 +30,6 @@
     "deploy": "gh-pages -d build",
     "preserve": "yarn build:staging",
     "serve": "serve -s build -l 3000",
-    "preapp": "yarn build",
     "app": "electron .",
     "prepackage": "yarn build",
     "package": "echo Not Ready Yet",
