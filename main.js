@@ -31,7 +31,7 @@ const createMiddleware = () => {
   session.defaultSession.webRequest.onBeforeRequest(
     ({ url, resourceType }, callback) => {
       if (
-        url !== INDEX &&
+        !minimatch(url, `${INDEX}**`) &&
         url.startsWith('file://') &&
         resourceType === 'mainFrame'
       )
