@@ -1,5 +1,6 @@
 const { app, screen, session, BrowserWindow } = require('electron')
 const serve = require('electron-serve')
+const isDev = require('electron-is-dev')
 const minimatch = require('minimatch')
 
 const loadFile = serve({ directory: 'build' })
@@ -17,7 +18,7 @@ const createWindow = async () => {
   })
   await loadFile(win)
   await win.loadURL('app://-')
-  win.webContents.openDevTools()
+  if (isDev) win.webContents.openDevTools()
 }
 
 const createMiddleware = () => {
