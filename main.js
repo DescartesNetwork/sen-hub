@@ -1,11 +1,10 @@
-const path = require('path')
-const minimatch = require('minimatch')
 const { app, screen, session, BrowserWindow } = require('electron')
+const serve = require('electron-serve')
+const minimatch = require('minimatch')
 
-const BUILD = path.join(__dirname, 'build')
-const INDEX = `file://${path.join(BUILD, 'index.html')}`
+const loadFile = serve({ directory: 'build' })
 
-const createWindow = () => {
+const createWindow = async () => {
   const {
     workAreaSize: { width, height },
   } = screen.getPrimaryDisplay()
@@ -16,7 +15,8 @@ const createWindow = () => {
       nodeIntegration: false,
     },
   })
-  win.loadURL(INDEX)
+  await loadFile(win)
+  await win.loadURL('app://-')
   win.webContents.openDevTools()
 }
 
@@ -28,22 +28,18 @@ const createMiddleware = () => {
       return callback({ requestHeaders })
     },
   )
-  session.defaultSession.webRequest.onBeforeRequest(
-    ({ url, resourceType }, callback) => {
-      if (
-        !minimatch(url, `${INDEX}**`) &&
-        url.startsWith('file://') &&
-        resourceType === 'mainFrame'
-      )
-        return callback({ redirectURL: INDEX })
-      return callback({})
-    },
-  )
   session.defaultSession.webRequest.onHeadersReceived(
     ({ responseHeaders }, callback) => {
       const disabledHeaders = ['X-Frame-Options', 'x-frame-options']
       disabledHeaders.forEach((header) => {
         if (responseHeaders[header]) delete responseHeaders[header]
+      })
+      const modifiedHeaders = [
+        'Access-Control-Allow-Origin',
+        'access-control-allow-origin',
+      ]
+      modifiedHeaders.forEach((header) => {
+        if (responseHeaders[header]) responseHeaders[header] = '*'
       })
       return callback({ responseHeaders })
     },
