@@ -1,12 +1,9 @@
 const { app, screen, session, BrowserWindow } = require('electron')
 const isDev = require('electron-is-dev')
 const minimatch = require('minimatch')
+const loadFile = require('./serve.electron')({ directory: 'build' })
 
-const serve = require('./serve')
-
-const loadFile = serve({ directory: 'build' })
-
-const createWindow = async () => {
+const createWindow = () => {
   const {
     workAreaSize: { width, height },
   } = screen.getPrimaryDisplay()
@@ -17,9 +14,8 @@ const createWindow = async () => {
       nodeIntegration: false,
     },
   })
-  await loadFile(win)
-  await win.loadURL('app://-')
   if (isDev) win.webContents.openDevTools()
+  loadFile(win)
 }
 
 const createMiddleware = () => {

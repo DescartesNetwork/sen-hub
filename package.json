@@ -2,7 +2,6 @@
   "name": "senhub",
   "version": "3.0.36",
   "homepage": "./",
-  "main": "main.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@senswap/sen-js": "^1.4.0",
@@ -11,6 +10,7 @@
     "@sentre/senhub": "^3.0.49",
     "antd": "^4.21.1",
     "bn.js": "^5.2.0",
+    "glob": "^8.0.3",
     "minimatch": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,7 +30,8 @@
     "deploy": "gh-pages -d build",
     "preserve": "yarn build:staging",
     "serve": "serve -s build -l 3000",
-    "app": "electron .",
+    "preapp": "yarn build",
+    "app": "electron ./main.electron.js",
     "prepackage": "yarn build",
     "package": "echo Not Ready Yet",
     "update": "yarn add @sentre/antd-ionicon@latest @sentre/senhub@latest && yarn add -D @sentre/craco-plugins@latest"
