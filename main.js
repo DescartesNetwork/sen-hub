@@ -1,7 +1,8 @@
 const { app, screen, session, BrowserWindow } = require('electron')
-const serve = require('electron-serve')
 const isDev = require('electron-is-dev')
 const minimatch = require('minimatch')
+
+const serve = require('./serve')
 
 const loadFile = serve({ directory: 'build' })
 
