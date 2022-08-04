@@ -11,7 +11,7 @@ import { increaseCounter } from 'model/main.controller'
 const View = () => {
   const address = useWalletAddress()
   const dispatch = useDispatch<AppDispatch>()
-  const { counter } = useSelector((state: AppState) => state.main)
+  const counter = useSelector((state: AppState) => state.main.counter)
 
   const increase = useCallback(() => dispatch(increaseCounter()), [dispatch])
 
