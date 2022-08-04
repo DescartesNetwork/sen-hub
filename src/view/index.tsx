@@ -1,30 +1,19 @@
-import { useCallback, useEffect, useMemo } from 'react'
+import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useWallet, createPDB } from '@sentre/senhub'
+import { useWalletAddress } from '@sentre/senhub'
 
 import { Row, Col, Typography, Button, Space } from 'antd'
 import IonIcon from '@sentre/antd-ionicon'
 
 import { AppDispatch, AppState } from 'model'
 import { increaseCounter } from 'model/main.controller'
-import configs from 'configs'
-
-const {
-  manifest: { appId },
-} = configs
 
 const View = () => {
-  const {
-    wallet: { address },
-  } = useWallet()
+  const address = useWalletAddress()
   const dispatch = useDispatch<AppDispatch>()
-  const { counter } = useSelector((state: AppState) => state.main)
+  const counter = useSelector((state: AppState) => state.main.counter)
 
-  const pdb = useMemo(() => createPDB(address, appId), [address])
   const increase = useCallback(() => dispatch(increaseCounter()), [dispatch])
-  useEffect(() => {
-    if (pdb) pdb.setItem('counter', counter)
-  }, [pdb, counter])
 
   return (
     <Row gutter={[24, 24]} align="middle">
