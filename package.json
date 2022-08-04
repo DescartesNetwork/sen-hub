@@ -1,13 +1,13 @@
 {
   "name": "senhub",
-  "version": "3.0.36",
+  "version": "3.1.2",
   "homepage": "./",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@senswap/sen-js": "^1.4.0",
     "@sentre/antd-ionicon": "^1.0.36",
     "@sentre/react-lazyload": "^3.2.2",
-    "@sentre/senhub": "^3.1.1",
+    "@sentre/senhub": "^3.1.2",
     "antd": "^4.21.1",
     "bn.js": "^5.2.0",
     "glob": "^8.0.3",
@@ -22,14 +22,10 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "yarn build:production",
-    "build:production": "craco build",
-    "build:staging": "env-cmd -f .env.staging craco build",
+    "build": "craco build",
     "test": "craco test",
-    "predeploy": "yarn build:production",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "preserve": "yarn build:staging",
-    "serve": "serve -s build -l 3000",
     "preapp": "yarn build",
     "app": "electron ./main.electron.js",
     "prepackage": "yarn build",
@@ -72,9 +68,7 @@
     "electron": "^19.0.10",
     "electron-forge": "^5.2.4",
     "electron-is-dev": "^2.0.0",
-    "env-cmd": "^10.1.0",
     "gh-pages": "^3.2.3",
-    "serve": "^12.0.1",
     "typescript": "^4.5.2"
   }
 }
