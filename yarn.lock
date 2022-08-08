@@ -1882,31 +1882,28 @@
     soprox-abi "^0.0.18"
     tweetnacl "^1.0.3"
 
-"@sentre/antd-ionicon@^1.0.31":
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.31.tgz#6d9f84c69bd886c7513853bbb8c5a82c65e0919c"
-  integrity sha512-/xQVEHRkK4yzmav/WzFZ5SxMV2g624FF+/hXD0GNwbyP0WQb/mEM7eEvmUVhBDAL1ne9d6byUn1OfGvMHJzCLA==
+"@sentre/antd-ionicon@^1.0.37":
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.37.tgz#32a875e5824d5d7bed8e86b7dcfb39ecc022dd98"
+  integrity sha512-TdZCXj4EmnI/CKvJ+K/yvRcF9ZPRGMsCSAj6yKY9bnTHDHa7Ka4rVpX+ugMNegIdhcBIQmErtKauqzSZtkRXVg==
   dependencies:
     react-helmet "^6.1.0"
 
-"@sentre/antd-ionicon@^1.0.36":
-  version "1.0.36"
-  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.36.tgz#2776aa100470f883f49dc5342194410ab393b4b5"
-  integrity sha512-pARsl+TzfS06HvRSwDccOzCORBkJYPHj2Q5SrNcrMyZDl4OWChllcMWul7O0adWZIEO2OxNGUDG2yhacmmQNiw==
+"@sentre/connector@^0.0.55":
+  version "0.0.55"
+  resolved "https://registry.yarnpkg.com/@sentre/connector/-/connector-0.0.55.tgz#85985c42b077774f358fed0c65d1e0691d015ed6"
+  integrity sha512-Zs50Gl2IdT9fhzCrQZPrCdfh6JYgxUb5XCOkYM5++MXG99HZW6LJ3MU/21opA7WzdOdKiDNygp+yEmSUiK7aOA==
   dependencies:
-    react-helmet "^6.1.0"
+    "@solana/wallet-adapter-base" "^0.9.7"
+    "@solana/web3.js" "^1.44.3"
+    bs58 "^5.0.0"
+    tweetnacl "^1.0.3"
+    uuid "^8.3.2"
 
-"@sentre/connector@^0.0.30":
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/@sentre/connector/-/connector-0.0.30.tgz#c77162b7d799e12b74d8d3b65eea465d0ffb5fcc"
-  integrity sha512-/tJHcOBfsk96LcCM98JfuOtD/Ski1W4hBowiG7/tRw/u639R3hFCbUfg3pUcA9DwMJXCv1dTK2ld/99TvQGVyw==
-  dependencies:
-    "@solana/web3.js" "^1.43.1"
-
-"@sentre/craco-plugins@^1.0.36":
-  version "1.0.36"
-  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.36.tgz#b22f0b02379e814556b699be7dfcba1172d9dc42"
-  integrity sha512-vskl54PuS+qxkhhe3ktLCZ8bNjLVraPKwc7Wo6ym8M+7LQy75bPpee6C4+77Aslx9ISdEKbkLlNImjlOPbK26w==
+"@sentre/craco-plugins@^1.0.37":
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.37.tgz#59c31c5b8376c3f5ff81a90abd15d9270c448ed2"
+  integrity sha512-HF+vqFwkLlVvve1x7f7Y+qJ2NACU+vxoEjgNDqwwXt9OQjsY6hB/xN6wRMCqixhTpwgWS+xIziHSLw5hDk86XQ==
   dependencies:
     "@babel/cli" "^7.17.10"
     "@babel/core" "^7.18.2"
@@ -1949,18 +1946,18 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.1.15":
-  version "3.1.15"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.1.15.tgz#a9a27ffe0b9e2abcd28f963aec7f1726228a5999"
-  integrity sha512-XEO4ruYNJZdXlLQNcSuhG9ZAJNGshexFP5LridkC8M+pRc7mMuGFrG3/GaCLe1CATbLLrAC2BR/QXufagnfVXw==
+"@sentre/senhub@^3.1.16":
+  version "3.1.16"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.1.16.tgz#745db0306fdbdbbeee8e539c8cac46ef653852c7"
+  integrity sha512-RpuLnBjkVfChLFE46vqTC/buanny+hClbH8zvgTpHZjrrG8E4a2gAJEBCBbuxygIovbUuE4PXxpATA+hcS+nMQ==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
     "@project-serum/sol-wallet-adapter" "^0.2.6"
     "@reduxjs/toolkit" "^1.8.0"
     "@senswap/sen-js" "^1.4.0"
-    "@sentre/antd-ionicon" "^1.0.31"
-    "@sentre/connector" "^0.0.30"
+    "@sentre/antd-ionicon" "^1.0.37"
+    "@sentre/connector" "^0.0.55"
     "@sentre/react-dynamic-remote-component" "^0.0.6"
     "@sentre/react-lazyload" "^3.2.2"
     "@solana/spl-token-registry" "^0.2.3771"
@@ -2019,7 +2016,14 @@
   dependencies:
     cross-fetch "3.0.6"
 
-"@solana/web3.js@1.44.3", "@solana/web3.js@^1.29.2", "@solana/web3.js@^1.43.1":
+"@solana/wallet-adapter-base@^0.9.7":
+  version "0.9.10"
+  resolved "https://registry.yarnpkg.com/@solana/wallet-adapter-base/-/wallet-adapter-base-0.9.10.tgz#6a4b2e5218b5939fb607e263760c48cd016af0f3"
+  integrity sha512-NmNybJSoQ4jYb62lKbTIqMhAivpwwzBBrgHNQjGQlhunIusbYf3an7pyPPfeqgBKdPi4IaNA782O0g6q2tjGRQ==
+  dependencies:
+    eventemitter3 "^4.0.0"
+
+"@solana/web3.js@1.44.3", "@solana/web3.js@^1.29.2", "@solana/web3.js@^1.44.3":
   version "1.44.3"
   resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.44.3.tgz#a4a6ac593c3b4b0ab47fa7d716ffd9ab03542f7b"
   integrity sha512-x6IUi1ikwgXe2fgZGeMhuGRRRp2JbqzP+Qos/zsDhkZP0TpaZhJtPXUy7h5EhmXBK4JneSpIj1SQvakVvEJ+Mw==
@@ -3663,6 +3667,11 @@ base-x@^3.0.2:
   dependencies:
     safe-buffer "^5.0.1"
 
+base-x@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/base-x/-/base-x-4.0.0.tgz#d0e3b7753450c73f8ad2389b5c018a4af7b2224a"
+  integrity sha512-FuwxlW4H5kh37X/oW59pwTzzTKRzfrrQwhmyspRM7swOEZcHtDZSCt45U6oKgtuFE+WYPblePMVIPR4RZrh/hw==
+
 base16@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/base16/-/base16-1.0.0.tgz#e297f60d7ec1014a7a971a39ebc8a98c0b681e70"
@@ -3936,6 +3945,13 @@ bs58@^4.0.0, bs58@^4.0.1:
   integrity sha512-Ok3Wdf5vOIlBrgCvTq96gBkJw+JUEzdBgyaza5HLtPm7yTHkjRy8+JzNyHF7BHa0bNWOQIp3m5YF0nnFcOIKLw==
   dependencies:
     base-x "^3.0.2"
+
+bs58@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/bs58/-/bs58-5.0.0.tgz#865575b4d13c09ea2a84622df6c8cbeb54ffc279"
+  integrity sha512-r+ihvQJvahgYT50JD05dyJNKlmmSlMoOGwn1lCcEzanPglg7TxYjioQUYehQ9mAR/+hOSd2jRc/Z2y5UxBymvQ==
+  dependencies:
+    base-x "^4.0.0"
 
 bser@2.1.1:
   version "2.1.1"
