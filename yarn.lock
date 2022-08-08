@@ -1949,10 +1949,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.1.14":
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.1.14.tgz#96871102286698ba8115e9659d7ce8f7a8ff5d66"
-  integrity sha512-dK3JWIoneHBGjPSS1W8SXp+BluHj5Mh2O7Bg8NZXm/A9IwWNN3kahGS85c6BcicpUH6aRIaJCCkr0MXJo/xPbQ==
+"@sentre/senhub@^3.1.15":
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.1.15.tgz#a9a27ffe0b9e2abcd28f963aec7f1726228a5999"
+  integrity sha512-XEO4ruYNJZdXlLQNcSuhG9ZAJNGshexFP5LridkC8M+pRc7mMuGFrG3/GaCLe1CATbLLrAC2BR/QXufagnfVXw==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -1978,7 +1978,6 @@
     react-redux "^7.2.6"
     react-router-dom "^5.3.0"
     remarkable "^2.0.1"
-    swiper "^7.2.0"
     swr "^1.3.0"
     tweetnacl "^1.0.3"
 
@@ -5076,13 +5075,6 @@ dom-serializer@^1.0.1:
     domelementtype "^2.0.1"
     domhandler "^4.2.0"
     entities "^2.0.0"
-
-dom7@^4.0.2:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
-  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
-  dependencies:
-    ssr-window "^4.0.0"
 
 domelementtype@1:
   version "1.3.1"
@@ -12182,11 +12174,6 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-ssr-window@^4.0.0, ssr-window@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
-  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
-
 stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
@@ -12475,14 +12462,6 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
-
-swiper@^7.2.0:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.4.1.tgz#99fc586d1335b45250d2c6b3128dc91f8047d3e7"
-  integrity sha512-dhbL4tpYFvHug1J7GnKElfTi6EYhlZy/vNZRhHkWFyUsWZ1Vovipxj3la5gqllMogygXJMe3zvVv+f6eppvWiA==
-  dependencies:
-    dom7 "^4.0.2"
-    ssr-window "^4.0.2"
 
 swr@^1.3.0:
   version "1.3.0"
