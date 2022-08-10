@@ -21,7 +21,10 @@ const createWindow = () => {
 const createMiddleware = () => {
   session.defaultSession.webRequest.onBeforeSendHeaders(
     ({ url, requestHeaders }, callback) => {
-      if (minimatch(url, '*://*.solana-mainnet.quiknode.pro/*'))
+      if (
+        minimatch(url, '*://*.solana-mainnet.quiknode.pro/*') ||
+        minimatch(url, '*://api.sentre.io/**')
+      )
         requestHeaders['Origin'] = 'https://hub.sentre.io'
       return callback({ requestHeaders })
     },
@@ -37,7 +40,7 @@ const createMiddleware = () => {
         'access-control-allow-origin',
       ]
       modifiedHeaders.forEach((header) => {
-        if (responseHeaders[header]) responseHeaders[header] = '*'
+        if (responseHeaders[header]) responseHeaders[header] = 'app://-'
       })
       return callback({ responseHeaders })
     },
