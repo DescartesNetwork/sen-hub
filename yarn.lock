@@ -1994,10 +1994,10 @@
     soprox-abi "^0.0.18"
     tweetnacl "^1.0.3"
 
-"@sentre/antd-ionicon@^1.0.37":
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.37.tgz#32a875e5824d5d7bed8e86b7dcfb39ecc022dd98"
-  integrity sha512-TdZCXj4EmnI/CKvJ+K/yvRcF9ZPRGMsCSAj6yKY9bnTHDHa7Ka4rVpX+ugMNegIdhcBIQmErtKauqzSZtkRXVg==
+"@sentre/antd-ionicon@^1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.38.tgz#45149ee0599d8e06e41a0b322853995e818c1039"
+  integrity sha512-gCeS27E3DFIUS35E1r0DHzsEYGnBE6rIA86XnbtNJQwZNBjWlCpXsD0UA5WxYF/0lgY+cTh+L+/1kjZiwOslrg==
   dependencies:
     react-helmet "^6.1.0"
 
@@ -2012,10 +2012,10 @@
     tweetnacl "^1.0.3"
     uuid "^8.3.2"
 
-"@sentre/craco-plugins@^1.0.37":
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.37.tgz#59c31c5b8376c3f5ff81a90abd15d9270c448ed2"
-  integrity sha512-HF+vqFwkLlVvve1x7f7Y+qJ2NACU+vxoEjgNDqwwXt9OQjsY6hB/xN6wRMCqixhTpwgWS+xIziHSLw5hDk86XQ==
+"@sentre/craco-plugins@^1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.38.tgz#b61e414515ec9faae6f0ab9c6d18fbe31074ee73"
+  integrity sha512-xIVORdoVYzaZwZDxq0uXqW/9D154t2GxkeFcPlQ3h40lwXebp6wv1yLSjihkX2dJARQP0j9xI2ZNdkiLCnHhGw==
   dependencies:
     "@babel/cli" "^7.17.10"
     "@babel/core" "^7.18.2"
@@ -2026,6 +2026,7 @@
     assert "^2.0.0"
     babel-loader "^8.2.5"
     babel-plugin-module-resolver "^4.1.0"
+    browserify-zlib "^0.2.0"
     buffer "^6.0.3"
     craco-module-federation "^1.1.0"
     crypto-browserify "^3.12.0"
@@ -2058,10 +2059,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.10.tgz#1e5989941c7be1772ee1122cb7bca92f75e690f4"
-  integrity sha512-PEDu2JYviqB7dmvm+uP7ohYx+1ckgXKXD7V+ZUNfd8OKSTv047Fz1I8ojPJ0xSkblKtSfGxhgbOuMzo0CpNIFg==
+"@sentre/senhub@^3.2.12":
+  version "3.2.12"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.12.tgz#abda72b686854bd3cba5d4abf30a60cf908e8ffa"
+  integrity sha512-me6X/P7LuSPsYDmNLIS+DDWEtMq6mhSaqpQ4Nu6HcS38lw7eioTM2+T2myMYtqnEjQvOeTRsZAT4/1NOz6icKw==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -2070,7 +2071,7 @@
     "@project-serum/sol-wallet-adapter" "^0.2.6"
     "@reduxjs/toolkit" "^1.8.0"
     "@senswap/sen-js" "^1.4.0"
-    "@sentre/antd-ionicon" "^1.0.37"
+    "@sentre/antd-ionicon" "^1.0.38"
     "@sentre/connector" "^0.0.57"
     "@sentre/react-dynamic-remote-component" "^0.0.6"
     "@sentre/react-lazyload" "^3.2.2"
@@ -4094,6 +4095,13 @@ browserify-sign@^4.0.0:
     parse-asn1 "^5.1.5"
     readable-stream "^3.6.0"
     safe-buffer "^5.2.0"
+
+browserify-zlib@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/browserify-zlib/-/browserify-zlib-0.2.0.tgz#2869459d9aa3be245fe8fe2ca1f46e2e7f54d73f"
+  integrity sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
+  dependencies:
+    pako "~1.0.5"
 
 browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.6, browserslist@^4.18.1, browserslist@^4.20.2, browserslist@^4.20.3, browserslist@^4.21.0:
   version "4.21.1"
@@ -9966,7 +9974,7 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-pako@^1.0.2:
+pako@^1.0.2, pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
