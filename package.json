@@ -1,6 +1,6 @@
 {
   "name": "senhub",
-  "version": "3.2.10",
+  "version": "3.2.12",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@senswap/sen-js": "^1.4.0",
