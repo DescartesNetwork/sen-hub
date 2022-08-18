@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.e3cf7d00.js",
+    "main.js": "/static/js/main.7425f3bd.js",
     "senhub.js": "/index.js",
     "static/js/src_bootstrap_tsx.6401ae38.chunk.js": "/static/js/src_bootstrap_tsx.6401ae38.chunk.js",
     "static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js",
@@ -52,7 +52,7 @@
     "static/media/icon-telegram.svg": "/static/media/icon-telegram.2450489f40d03000fe65fc1c6f238d85.svg",
     "static.app.tsx": "/senhub-asset-senhub.json",
     "static/media/README.md": "/static/media/README.ff93448fef94ea73029b.md",
-    "main.e3cf7d00.js.map": "/static/js/main.e3cf7d00.js.map",
+    "main.7425f3bd.js.map": "/static/js/main.7425f3bd.js.map",
     "index.js.map": "/index.js.map",
     "src_bootstrap_tsx.6401ae38.chunk.js.map": "/static/js/src_bootstrap_tsx.6401ae38.chunk.js.map",
     "vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map": "/static/js/vendors-node_modules_reduxjs_toolkit_dist_redux-toolkit_esm_js.80733981.chunk.js.map",
@@ -72,6 +72,6 @@
     "vendors-node_modules_react-redux_es_index_js.9938947e.chunk.js.map": "/static/js/vendors-node_modules_react-redux_es_index_js.9938947e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e3cf7d00.js"
+    "static/js/main.7425f3bd.js"
   ]
 }
