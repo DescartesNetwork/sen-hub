@@ -2012,7 +2012,7 @@
     tweetnacl "^1.0.3"
     uuid "^8.3.2"
 
-"@sentre/craco-plugins@^1.0.38":
+"@sentre/craco-plugins@^1.0.39":
   version "1.0.39"
   resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.39.tgz#e913a518c7688db36eab6f32907e67fa9b5e1e12"
   integrity sha512-7eDgSvLA7CPKAxsf09TpE03BgvqSJ1bhVMszQ0+BA/K5utBJxm8dlhMYnYmVOMSF/sTRt/yoWFRH0v3U/GPcOg==
@@ -2059,10 +2059,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.2.16":
-  version "3.2.16"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.16.tgz#17a4102e9896f83d3f7422b3058a658b1dc66f4d"
-  integrity sha512-tUckGdGaeL5M0vPGsHiTr6STVTLZC1/7Sbg9QlFlhbUZ/dGjdbx/v5Xmi8yFkLkNDTlDAvBOQo9jPZn4V2kELw==
+"@sentre/senhub@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.17.tgz#b2e0f95ab8ebecc42a3fedb432b82743138f566b"
+  integrity sha512-cVYhYu1O0Ivs4lDAu3GvCXnmqrmyJBrL/hCYxANcejHQ6C2Tfqxvk6uOc7Riw5hWbtZg2yEx5JBMcF3OJ7sEXw==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
