@@ -2060,10 +2060,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.2.22":
-  version "3.2.22"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.22.tgz#92e78e2a14a978dc73ac052e5cbf9a3c28618992"
-  integrity sha512-u+x/M7rdearQOtlO85wjvAcwr8ljshKiF4pfvPiF135y8L/lReZ87IpZ3UE1RbpLVamp1ZOYWveVaVKG9mPx5g==
+"@sentre/senhub@^3.2.23":
+  version "3.2.23"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.2.23.tgz#94b8cc1f93e7681aa7dd988317dba68b1f4681d5"
+  integrity sha512-lFCdVhcNcFTJVv8GyNgV+4qgpJbl9fwu5/e4Xzz2YLr/EmEyWWTfl+FidpjiX4eCCl/KFbl0dhj/aIb3H426jA==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
