@@ -2048,10 +2048,10 @@
     util "^0.12.4"
     webpack-bundle-analyzer "^4.5.0"
 
-"@sentre/react-dynamic-remote-component@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@sentre/react-dynamic-remote-component/-/react-dynamic-remote-component-0.0.6.tgz#9b5f0ef953091f5afeb48ae9075c0359416aa143"
-  integrity sha512-DS1R++vpVMNtj4270RpBO8GsOYGaQLFr3Xh3tUjBswyGwqBDfLrSfNPFGsMTcQTHDo+prDB/6b4wqOSXB2g1YA==
+"@sentre/react-dynamic-remote-component@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@sentre/react-dynamic-remote-component/-/react-dynamic-remote-component-0.0.8.tgz#ef97873e92a06885f1198472236fd315ac174037"
+  integrity sha512-o2gjDK8MEKiwAaNaqR0d6I4K6f/N/qH/KT0NY3KWNIADbx4aU3Q4SdhgonwYw5m9etULTeOD9m/rts3znG92xA==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -2060,10 +2060,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.3.2.tgz#7ee9773c94716684ddd9a17f598ab8af7c48a147"
-  integrity sha512-zdZKvjcYelYsFZVhO3r55rgYRXNkl2Rj1RO/nUgm7Jr6gCQmFJVkoQbsTH1i8rcyvRtkHwB8ekxJmigV9cKe6Q==
+"@sentre/senhub@^3.3.5":
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.3.5.tgz#8546278098678d03b8515ab40262cd0c3a9580c2"
+  integrity sha512-kHS9eG8ClAUn2wcmfBVWSJxHsLWgS73mCUGD7BqouswOr3lnwvABSgpBJ/mSWth6numuh1zVGK4aGAPMRfT+gQ==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -2074,7 +2074,7 @@
     "@senswap/sen-js" "^1.4.0"
     "@sentre/antd-ionicon" "^1.0.46"
     "@sentre/connector" "^0.1.0"
-    "@sentre/react-dynamic-remote-component" "^0.0.6"
+    "@sentre/react-dynamic-remote-component" "^0.0.8"
     "@sentre/react-lazyload" "^3.2.2"
     "@solana/spl-token-registry" "^0.2.3771"
     antd "^4.23.1"
