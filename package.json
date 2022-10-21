@@ -1,6 +1,6 @@
 {
   "name": "senhub",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@sentre/senhub": "^4.2.2",
