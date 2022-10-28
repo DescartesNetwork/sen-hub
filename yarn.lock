@@ -1931,10 +1931,10 @@
   resolved "https://registry.yarnpkg.com/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz#f3d921327a2b14b9b3a9e906d01034f11387097a"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-4.2.2.tgz#ad04040f2c6ccc369d3559a51f01d82b0a98c90e"
-  integrity sha512-MJv7rxKp1uE+kp2rmLb7UiwrPJXLaJ9U7+h3tCNLiC7LCeUi/7Ngrr8P1M/VYsFiUo6y2zS/wqTLrqOuHvVYbw==
+"@sentre/senhub@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-4.3.1.tgz#c05095c035393e0fa323cdf7dd4e3245a432f050"
+  integrity sha512-sQHY0eqjFrG8kVTLkGIFIqO4dUsYsM8aUqtAZ+GCXW+0VcqjH5+p3RSZc8BLYmLRKIG/BIPh8DgxDuyWz4ciEQ==
   dependencies:
     "@dnd-kit/core" "^6.0.5"
     "@dnd-kit/modifiers" "^6.0.0"
